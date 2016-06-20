@@ -1,15 +1,9 @@
-﻿
-namespace PizzaMaker
+﻿namespace PizzaMaker
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-
-    class Startup
+    public static class Startup
     {
-        static void Main()
+        public static void Main()
         {
-
         }
     }
 }
