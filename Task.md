@@ -1,56 +1,86 @@
-# Object-Oriented-Programming
+# CSharp OOP Teamwork Assignment June 2016
 
-Repository for the course [Object-oriented programming with C#](https://telerikacademy.com/Courses/Courses/Details/338) at [Telerik Academy](https://telerikacademy.com)
+## Project Description
 
-
-## Course program
-
-### [00. Course Introduction](/Topics/00. Course-Intro)
-
-Course Program, Examination, Trainers
-
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Object-Oriented-Programming/master/Topics/00.%20Course-intro/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/00. Course-Intro/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/00. Course-Intro/homework) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/video.png" height="15"> Videos](/Topics/00. Course-Intro/VIDEOS.md)
-
-
-### [01. Defining Classes 1](/Topics/01. Defining-Classes-Part-1)
-
-Classes, Fields, Constructors, Methods, Properties
-
-
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="15" />Slides](https://rawgit.com/TelerikAcademy/Object-Oriented-Programming/master/Topics/01. Defining-Classes-Part-1/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/01. Defining-Classes-Part-1/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/01. Defining-Classes-Part-1/homework) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/video.png" height="13"> Videos](/Topics/01. Defining-Classes-Part-1/VIDEOS.md)
-
-
-### [02. Defining Classes 2](/Topics/02. Defining-Classes-Part-2)
-
-Static Members, Structures,Enumerations, Generic Classes, Namespaces
-
-
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="15" />Slides](https://rawgit.com/TelerikAcademy/Object-Oriented-Programming/master/Topics/02. Defining-Classes-Part-2/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/02. Defining-Classes-Part-2/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/02. Defining-Classes-Part-2/homework) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/video.png" height="13"> Videos](/Topics/02. Defining-Classes-Part-2/VIDEOS.md)
-
-### [03. Extension Methods, Delegates, Lambda Expressions, LINQ](/Topics/03. Extension-Methods-Delegates-Lambda-LINQ)
-
-Extension Methods, Anonymous Types, Delegates, Lambda Expressions, LINQ, Dynamic, Events
+Design and implement an object-oriented application by choice. Here are some suggestions:
+- A game:
+  - The world can be fantasy, sci-fi, modern, etc.
+  - You may have one or more heroes, gaining experience, having skills, wearing items, etc.
+  - You may have one or more players, fighting against a computer or against each other
+  - You may have enemies like creatures, machines, warriors, etc. 
+  - You may have items like swords, guns, armor, space-suits, etc.
+  - You may have skills like double-damage, teleportation, etc. 
+- A line-of-business application
+  - TODO list application, TODOs can have a deadline, priorities, types etc.
+  - Calendar application, keeping meetings with places and date, having notifications, etc.
+  - Social network, with different users, different roles, friend list, user information, chat between users, groups of users, etc.
+  - A chat application, supporting user-to-user chats, channels, group chats, friends-list, starred users, etc.
+  - Application for Insurance company.
+  - Informational system for Postal services (sending & receiving mails, packages, etc).
+  - Encyclopedia game.
+  - Geocaching game.
+  - “Tourist guide” informational system.
+  - Cooking e-book.
+  - Personal accounting system.
+  - Personal medical cart.
+  - Events scheduling system.
 
 
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="15" />Slides](https://rawgit.com/TelerikAcademy/Object-Oriented-Programming/master/Topics/03. Extension-Methods-Delegates-Lambda-LINQ/slides/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/03. Extension-Methods-Delegates-Lambda-LINQ/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/03. Extension-Methods-Delegates-Lambda-LINQ/homework) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/video.png" height="13"> Videos](/Topics/03. Extension-Methods-Delegates-Lambda-LINQ/VIDEOS.md)
+## General Requirements
+Please define and implement the following object-oriented assets in your project:
 
+- At least **5 interfaces** (with one or more implementations)
+- At least **15 classes** (implementing the application logic)
+- At least **3 abstract classes** (with inheritors)
+- At least **1 custom exception class** (with usage in your code)
+- At least **3 levels of depth in inheritance**
+- At least **1 polymorphism usage**
+- At least **1 structure**
+- At least **1 enumeration**
+- At least **1 event** (with subscribers)
+- At least **1 design pattern** (e.g. Composite, Singleton, Factory, Wrapper, Bridge, Command,  etc.)
 
-### [04. OOP Principles 1](/Topics/04. OOP-Principles-Part-1)
+You might read about design patterns in Wikipedia, Sourcemaking, DoFactory and others.
 
-Inheritance, Abstraction, Encapsulation
+## Additional Requirements
+- Follow the **best practices for OO design**: use data encapsulation, use exception handling properly, use delegates and events like it is recommended in MSDN, use inheritance, abstraction and polymorphism properly, follow the principles of strong cohesion and loose coupling.
+- Obligatory use Git to keep your source code and for team collaboration (you might use https://github.com/). **TFS or SVN are not allowed. Use Git.**
+- Provide a class diagram (to visualize all types).
 
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="15" />Slides](https://rawgit.com/TelerikAcademy/Object-Oriented-Programming/master/Topics/04. OOP-Principles-Part-1/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/04. OOP-Principles-Part-1/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/04. OOP-Principles-Part-1/homework) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/video.png" height="13"> Videos](/Topics/04. OOP-Principles-Part-1/VIDEOS.md)
+## Optional Requirements
+If you have a chance, time and a suitable situation, you might add some of the following to your project:
 
-### [05. OOP Principles 2](/Topics/05. OOP-Principles-Part-2)
+- Static members (fields, properties, constructor, etc.)
+- Constants, generic types, indexers, operators overloading
+- Lambda expressions and LINQ
+- Implementation of `IEnumerable<T>`, `ICloneable`, `ToString()` override
+- Namespaces (if your classes are too many) 
+- User interface (UI) – console, graphical, web or mobile
 
-Polymorphism, Class Hierarchies, Exceptions, Strong Cohesion and Loose Coupling
+## Non-Required Work
+- Completely finished project is not obligatory required. It will not be a big problem if your project is not completely finished or is not working greatly. This team work project is for educational purpose. Its main purpose it to experience object-oriented modeling and OOP in a real-world project and to get some experience in team working and team collaboration with Git.
 
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="15" />Slides](https://rawgit.com/TelerikAcademy/Object-Oriented-Programming/master/Topics/05. OOP-Principles-Part-2/slides/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/05. OOP-Principles-Part-2/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/05. OOP-Principles-Part-2/homework) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/video.png" height="13"> Videos](/Topics/05. OOP-Principles-Part-2/VIDEOS.md)
+## Deliverables
+Put the following in a ZIP archive and submit it in http://telerikacademy.com/ course page (each team member submits the same file):
+- The complete source code.
+- Brief documentation of your project in **.md**(markdown). It should provide the following information (in brief):
+  - Team name and list of team members (with http://telerikacademy.com usernames)
+  - Project purpose – what problem do you solve and how?
+  - Class diagram of your types
+  - The URL of your Git repository
+  - Any other information (optionally)
+- Obligatory upload your projects in the Showcase system (http://best.telerikacademy.com/)
+- Optionally provide a PowerPoint presentation designed for the project defense.
 
-### [06. Common Type System](/Topics/06. Common-Type-System)
+## Public Project Defense
+Each team will have to deliver a public defense of its work in front of the other students and trainers. You will have only 10 minutes for the following:
+- Demonstrate the application (very shortly).
+- Show the class diagram (just a glance)
+- Show the source code in the Git web-based source code browser.
+- Show the commits logs to confirm that each team member has contributed.
+- Optionally you might prepare a PowerPoint/Revealjs Presentation/Markdown presentation (3-4 slides).
 
-.NET Types Hierarchy, Cloning, Comparing,Value and Reference Types, Parameters Passing
+Please be strict in timing! Be **well prepared for presenting** maximum of your work for minimum time. Bring your own laptop. Test it preliminary with the multimedia projector. Open the project assets beforehand to save time. **You have 10 minutes**, no more. It is not necessary for all team members to participate in the project defense.
 
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="15" />Slides](https://rawgit.com/TelerikAcademy/Object-Oriented-Programming/master/Topics/06. Common-Type-System/slides/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/06. Common-Type-System/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/06. Common-Type-System/homework) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/video.png" height="13"> Videos](/Topics/06. Common-Type-System/VIDEOS.md)
-
-### [07. OOP Workshop](/Topics/07. OOP-Workshop)
+## Give Feedback about Your Teammates
+You will be invited to provide feedback about all your teammates, their attitude to this project, their technical skills, their team working skills, their contribution to the project, etc. The feedback is important part of the project evaluation so **take it seriously and be honest**.

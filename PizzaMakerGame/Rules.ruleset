@@ -68,9 +68,12 @@
     <Rule Id="CA2241" Action="Warning" />
     <Rule Id="CA2242" Action="Warning" />
   </Rules>
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp" RuleNamespace="Microsoft.CodeAnalysis.CSharp">
+    <Rule Id="CS1633" Action="None" />
+  </Rules>
   <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
     <Rule Id="SA0000" Action="Warning" />
-    <Rule Id="SA1305" Action="None" />
+    <Rule Id="SA1028" Action="None" />
     <Rule Id="SA1412" Action="Warning" />
     <Rule Id="SA1609" Action="Warning" />
     <Rule Id="SA1629" Action="Warning" />

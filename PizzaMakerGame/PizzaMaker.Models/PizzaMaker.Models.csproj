@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{69C603B3-70CE-4B69-99A2-6F5B7EA6FEB2}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{2ED4317D-647F-4E27-B1ED-37C9AD532554}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PizzaMaker</RootNamespace>
-    <AssemblyName>PizzaMaker</AssemblyName>
+    <RootNamespace>PizzaMaker.Models</RootNamespace>
+    <AssemblyName>PizzaMaker.Models</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -25,7 +23,6 @@
     <CodeAnalysisRuleSet>..\Rules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -44,11 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Startup.cs" />
+    <Compile Include="BaseClasses\Addition.cs" />
+    <Compile Include="BaseClasses\Decorator.cs" />
+    <Compile Include="BaseClasses\Pizza.cs" />
+    <Compile Include="Enums\Consumables.cs" />
+    <Compile Include="Enums\For.cs" />
+    <Compile Include="Enums\Size.cs" />
+    <Compile Include="Interfaces\IAdditives.cs" />
+    <Compile Include="Interfaces\IMaker.cs" />
+    <Compile Include="Interfaces\IPizza.cs" />
+    <Compile Include="Models\Sausage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
