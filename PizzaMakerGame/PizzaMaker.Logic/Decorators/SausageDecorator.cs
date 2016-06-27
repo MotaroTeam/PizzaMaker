@@ -2,18 +2,23 @@
 {
     using Models.BaseClasses;
     using Models.Interfaces;
-    using Models.Models;
+    using PizzaMaker.Models;
 
     public class SausageDecorator : Decorator
     {
-        public SausageDecorator(IPizza pizza) 
-            : base(pizza)
+        private static SausageDecorator instance;
+
+        private SausageDecorator() 
         {
         }
 
-        public override void Decorate()
+        public static SausageDecorator Instance => instance ?? (instance = new SausageDecorator());
+
+        public override IPizza Decorate(IPizza pizza, int quantity)
         {
-            this.Pizza.Additions.Add(new Sausage(1));
+            pizza.Additions.Add(new Sausage(quantity));
+
+            return pizza;
         }
     }
 }

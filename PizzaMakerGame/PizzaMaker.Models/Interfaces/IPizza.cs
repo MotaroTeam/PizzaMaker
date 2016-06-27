@@ -5,10 +5,12 @@
 
     public interface IPizza
     {
+        string Name { get; }
+
         Size Size { get; }
 
         For For { get; set; }
 
-        ICollection<IAdditives> Additions { get; } 
+        ICollection<IAdditive> Additions { get; }
     }
 }

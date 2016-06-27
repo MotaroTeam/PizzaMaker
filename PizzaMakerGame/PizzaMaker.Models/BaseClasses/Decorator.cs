@@ -6,17 +6,13 @@
     {
         private IPizza pizza;
 
-        protected Decorator(IPizza pizza)
+        protected Decorator()
         {
-            this.pizza = pizza;
         }
 
-        public IPizza Pizza
+        public virtual IPizza Decorate(IPizza pizzaToDecorate, int quantity)
         {
-            get { return this.pizza; }
-            set { this.pizza = value; }
+            return pizzaToDecorate;
         }
-
-        public abstract void Decorate();
     }
 }

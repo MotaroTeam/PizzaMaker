@@ -2,13 +2,21 @@
 {
     using Interfaces;
 
-    public abstract class Addition : IAdditives
+    public abstract class Addition : IAdditive
     {
-        protected Addition()
+        private decimal priceValue;
+
+        protected Addition(int quantity)
         {
+            this.Quantity = quantity;
         }
 
-        public string Name { get; }
+        public string Name => this.GetType().Name;
+
+        public virtual decimal Price
+        {
+            get { return this.priceValue; }
+        }
 
         public int Quantity { get; set; }
     }

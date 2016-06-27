@@ -56,6 +56,16 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaMaker.Logic\PizzaMaker.Logic.csproj">
+      <Project>{49a3008d-2edd-46bb-aeee-0223488d0c58}</Project>
+      <Name>PizzaMaker.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PizzaMaker.Models\PizzaMaker.Models.csproj">
+      <Project>{2ed4317d-647f-4e27-b1ed-37c9ad532554}</Project>
+      <Name>PizzaMaker.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

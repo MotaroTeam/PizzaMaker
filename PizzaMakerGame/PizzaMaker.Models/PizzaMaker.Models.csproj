@@ -41,16 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additions\Cheese.cs" />
     <Compile Include="BaseClasses\Addition.cs" />
     <Compile Include="BaseClasses\Decorator.cs" />
-    <Compile Include="BaseClasses\Pizza.cs" />
+    <Compile Include="BaseClasses\BasePizza.cs" />
+    <Compile Include="DeliveryPizza.cs" />
     <Compile Include="Enums\Consumables.cs" />
     <Compile Include="Enums\For.cs" />
     <Compile Include="Enums\Size.cs" />
-    <Compile Include="Interfaces\IAdditives.cs" />
+    <Compile Include="Interfaces\IDeliverable.cs" />
+    <Compile Include="Interfaces\IAdditive.cs" />
     <Compile Include="Interfaces\IMaker.cs" />
     <Compile Include="Interfaces\IPizza.cs" />
-    <Compile Include="Models\Sausage.cs" />
+    <Compile Include="Pizza.cs" />
+    <Compile Include="PizzaMaker.cs" />
+    <Compile Include="Additions\Sausage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +65,9 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,17 +1,20 @@
 ﻿namespace PizzaMaker.Models.Interfaces
 {
     using System.Collections.Generic;
+    using global::PizzaMaker.Models.Enums;
 
     public interface IMaker
     {
         decimal Balance { get; set; }
 
-        void Buy(IAdditives resource);
+        ICollection<IDeliverable> PizzasForDelivery { get; set; }
+
+        void Buy(IAdditive resource);
 
         void Sell(IPizza pizza);
 
-        IPizza Create(ICollection<IAdditives> additions);
+        IPizza Create(string name, For usage, Size size);
 
-        void Deliver(ICollection<IPizza> pizzas, string adress);
+        void Deliver(string adress);
     }
 }
