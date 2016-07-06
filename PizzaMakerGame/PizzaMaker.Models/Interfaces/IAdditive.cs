@@ -6,6 +6,10 @@
 
         decimal Price { get; }
 
-        int Quantity { get; set; }
+        int Calories { get; }
+
+        int Quantity { get; }
+
+        bool IsVegetarian { get; }
     }
 }
