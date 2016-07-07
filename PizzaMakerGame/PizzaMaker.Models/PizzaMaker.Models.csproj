@@ -42,12 +42,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Additions\Cheese.cs" />
+    <Compile Include="Additions\Sauces\Alfredo.cs" />
+    <Compile Include="Additions\Sauces\Chily.cs" />
+    <Compile Include="Additions\Sauces\GarlicSauce.cs" />
+    <Compile Include="Additions\Sauces\Ketchup.cs" />
+    <Compile Include="Additions\Sauces\Marinara.cs" />
+    <Compile Include="Additions\Sauces\Pesto.cs" />
+    <Compile Include="Additions\Sauces\Ranch.cs" />
     <Compile Include="BaseClasses\Addition.cs" />
     <Compile Include="BaseClasses\Decorator.cs" />
     <Compile Include="BaseClasses\BasePizza.cs" />
     <Compile Include="DeliveryPizza.cs" />
     <Compile Include="Enums\Consumables.cs" />
     <Compile Include="Enums\For.cs" />
+    <Compile Include="Enums\Sauces.cs" />
     <Compile Include="Enums\Size.cs" />
     <Compile Include="Interfaces\IDeliverable.cs" />
     <Compile Include="Interfaces\IAdditive.cs" />
@@ -66,9 +74,7 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
