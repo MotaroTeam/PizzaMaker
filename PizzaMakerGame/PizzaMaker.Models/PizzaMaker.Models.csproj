@@ -42,6 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Additions\Cheese.cs" />
+    <Compile Include="Additions\Vegetables\Broccoli.cs" />
+    <Compile Include="Additions\Vegetables\Mushroom.cs" />
+    <Compile Include="Additions\Vegetables\Olive.cs" />
+    <Compile Include="Additions\Vegetables\Onion.cs" />
+    <Compile Include="Additions\Vegetables\Pepper.cs" />
+    <Compile Include="Additions\Vegetables\Tomatoe.cs" />
     <Compile Include="BaseClasses\Addition.cs" />
     <Compile Include="BaseClasses\Decorator.cs" />
     <Compile Include="BaseClasses\BasePizza.cs" />
