@@ -11,13 +11,9 @@
         {
             var pizza = new Pizza("Yaka Pica", For.Here, Size.Large);
 
-            var sausageDecorator = SausageDecorator.Instance;
+            var sauceDecorator = SauceDecorator.Instance;
 
-            sausageDecorator.Decorate(pizza, 2);
-
-            var cheeseDecorator = CheeseDecorator.Instance;
-
-            cheeseDecorator.Decorate(pizza, 3);
+            sauceDecorator.Decorate(pizza,Sauces.Alfredo, 1);
 
             var price = pizza.Price;
 
