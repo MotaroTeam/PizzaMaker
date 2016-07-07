@@ -1,7 +1,8 @@
 ﻿namespace PizzaMaker.Models.BaseClasses
 {
+    using System;
     using Interfaces;
-
+    
     public abstract class Decorator
     {
         private IPizza pizza;
@@ -10,7 +11,7 @@
         {
         }
 
-        public virtual IPizza Decorate(IPizza pizzaToDecorate, int quantity)
+        public virtual IPizza Decorate(IPizza pizzaToDecorate, Enum type, int quantity)
         {
             return pizzaToDecorate;
         }
