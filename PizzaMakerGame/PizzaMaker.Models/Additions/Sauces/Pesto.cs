@@ -2,14 +2,14 @@
 {
     using BaseClasses;
 
-    public class Alfredo : Addition
+    public class Pesto : Addition
     {
-        private const decimal PRICE = 0.30m;
+        private const decimal PRICE = 0.25m;
         private const int QUANTITY = 30; // quantity per serving
-        private const int CALORIES = 49; // per serving
+        private const int CALORIES = 117; // per serving
         private const bool VEGETARIAN = true;
 
-        public Alfredo(int quantity)
+        public Pesto(int quantity)
             : base(quantity)
         {
             this.isVegetarian = VEGETARIAN;
