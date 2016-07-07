@@ -26,6 +26,8 @@
             }
 
             Console.WriteLine("Price: " + price);
+
+            Console.ReadKey();
         }
     }
 }
