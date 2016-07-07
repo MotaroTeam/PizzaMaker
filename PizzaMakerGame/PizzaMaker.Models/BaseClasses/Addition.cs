@@ -8,7 +8,7 @@
         protected decimal priceValue;
         protected int calories;
         protected bool isVegetarian;
-        protected int quantity; //number of pieces
+        protected int quantity; // number of pieces
 
         protected Addition(int quantity)
         {
@@ -16,11 +16,11 @@
 
         public int Calories
         {
-
             get
             {
                 return this.calories;
             }
+
             protected set
             {
                 if (value < 0)
@@ -30,7 +30,6 @@
 
                 this.calories = value;
             }
-
         }
 
         public bool IsVegetarian
@@ -39,11 +38,13 @@
             {
                 return this.isVegetarian;
             }
+
             protected set
             {
-                this.IsVegetarian = value;
+                this.isVegetarian = value;
             }
         }
+
         public string Name => this.GetType().Name;
 
         public virtual decimal Price
@@ -53,7 +54,10 @@
 
         public int Quantity
         {
-            get { return this.quantity; }
+            get
+            {
+                return this.quantity;
+            }
 
             protected set
             {
@@ -64,8 +68,6 @@
 
                 this.quantity = value;
             }
-
         }
-
       }
 }
