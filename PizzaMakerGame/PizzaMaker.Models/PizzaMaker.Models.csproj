@@ -72,6 +72,7 @@
     <Compile Include="Enums\Size.cs" />
     <Compile Include="Enums\Vegetables.cs" />
     <Compile Include="Globals\GlobalConstants.cs" />
+    <Compile Include="Globals\Validation\AdditionOverload.cs" />
     <Compile Include="Globals\Validation\ArgumentValidation.cs" />
     <Compile Include="Interfaces\IDeliverable.cs" />
     <Compile Include="Interfaces\IAdditive.cs" />
