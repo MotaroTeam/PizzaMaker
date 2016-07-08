@@ -13,7 +13,7 @@
 
         void Sell(IPizza pizza);
 
-        IPizza Create(string name, For usage, Size size);
+        IPizza Create(string name, ForType usage, SizeType size);
 
         void Deliver(string adress);
     }

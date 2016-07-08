@@ -18,30 +18,30 @@
         
         public override IPizza Decorate(IPizza pizza, Enum type, int quantity)
         {
-            var sauce = this.SauceFactory((Sauces)type, quantity);
+            var sauce = this.SauceFactory((SauceType)type, quantity);
 
             pizza.Additions.Add(sauce);
 
             return pizza;
         }
 
-        private IAdditive SauceFactory(Sauces sauce, int quantity)
+        private IAdditive SauceFactory(SauceType sauce, int quantity)
         {
             switch (sauce)
             {
-                case Sauces.Alfredo:
+                case SauceType.Alfredo:
                     return new Alfredo(quantity);
-                case Sauces.Chily:
+                case SauceType.Chily:
                     return new Chily(quantity);
-                case Sauces.GarlicSauce:
+                case SauceType.GarlicSauce:
                     return new GarlicSauce(quantity);
-                case Sauces.Ketchup:
+                case SauceType.Ketchup:
                     return new Ketchup(quantity);
-                case Sauces.Marinara:
+                case SauceType.Marinara:
                     return new Marinara(quantity);
-                case Sauces.Pesto:
+                case SauceType.Pesto:
                     return new Pesto(quantity);
-                case Sauces.Ranch:
+                case SauceType.Ranch:
                     return new Ranch(quantity);
                 default:
                     throw new NullReferenceException("No such sauce");

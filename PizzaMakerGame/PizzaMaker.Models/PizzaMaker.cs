@@ -27,7 +27,7 @@
             throw new System.NotImplementedException();
         }
 
-        public IPizza Create(string name, For usage, Size size)
+        public IPizza Create(string name, ForType usage, SizeType size)
         {
             throw new System.NotImplementedException();
         }

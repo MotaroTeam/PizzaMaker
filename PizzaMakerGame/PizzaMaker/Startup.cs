@@ -9,11 +9,11 @@
     {
         public static void Main()
         {
-            var pizza = new Pizza("Yaka Pica", For.Here, Size.Large);
+            var pizza = new Pizza("Yaka Pica", ForType.Here, SizeType.Large);
 
             var sauceDecorator = SauceDecorator.Instance;
 
-            sauceDecorator.Decorate(pizza, Sauces.Alfredo, 1);
+            sauceDecorator.Decorate(pizza, SauceType.Alfredo, 1);
 
             var price = pizza.Price;
 

@@ -1,6 +1,6 @@
 ﻿namespace PizzaMaker.Models.Enums
 {
-    public enum Sauces
+    public enum SauceType
     {
         Alfredo = 0,
         Chily = 1,

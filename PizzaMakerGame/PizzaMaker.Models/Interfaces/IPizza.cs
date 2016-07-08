@@ -7,9 +7,9 @@
     {
         string Name { get; }
 
-        Size Size { get; }
+        SizeType Size { get; }
 
-        For For { get; set; }
+        ForType For { get; set; }
 
         ICollection<IAdditive> Additions { get; }
     }

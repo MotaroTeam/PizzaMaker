@@ -20,9 +20,9 @@
             {
                 switch (this.Size)
                 {
-                    case Size.Small: return 2m;
-                    case Size.Medium: return 4m;
-                    case Size.Large: return 6m;
+                    case SizeType.Small: return 2m;
+                    case SizeType.Medium: return 4m;
+                    case SizeType.Large: return 6m;
                     default:
                         throw new NotImplementedException("No Such Size");
                 }
@@ -31,9 +31,9 @@
 
         public string Name => $"{this.Size} {this.name}";
 
-        public Size Size { get; set; }
+        public SizeType Size { get; set; }
 
-        public For For { get; set; }
+        public ForType For { get; set; }
 
         public ICollection<IAdditive> Additions { get; set; }
     }

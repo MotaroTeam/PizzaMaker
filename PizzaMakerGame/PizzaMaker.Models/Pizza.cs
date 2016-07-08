@@ -7,7 +7,7 @@
 
     public class Pizza : BasePizza
     {
-        public Pizza(string name, For usage, Size size)
+        public Pizza(string name, ForType usage, SizeType size)
             : base(name)
         {
             this.Size = size;
