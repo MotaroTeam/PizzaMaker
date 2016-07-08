@@ -6,25 +6,28 @@
     using System.Text;
     using System.Threading.Tasks;
     using BaseClasses;
+    using Globals;
 
     public class Onion : Addition
     {
-        const decimal PRICE = 0.2m;
-        const int QUANTITY_PER_SERVING = 14;// quantity per serving
-        const int CALORIES = 4;
-        const bool VEGETARIAN = true;
+        public const decimal PRICE = 0.02m;
+        public const int CALORIES = 4;
+        public const bool VEGETARIAN = true;
 
         public Onion(int quantity)
             : base(quantity)
         {
             this.isVegetarian = VEGETARIAN;
-            this.calories = quantity * CALORIES;
-            this.quantity = quantity * QUANTITY_PER_SERVING;
+            this.Calories = quantity * CALORIES;
+            this.Quantity = quantity * GlobalConstants.VEGETABLES_QUANTITY;
         }
 
         public override decimal Price
         {
-            get { return PRICE * QUANTITY_PER_SERVING; }
+            get
+            {
+                return PRICE * this.Quantity;
+            }
         }
     }
 }

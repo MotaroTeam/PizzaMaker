@@ -1,4 +1,4 @@
-﻿namespace PizzaMaker.Models.Additions.Vegetables
+﻿namespace PizzaMaker.Models.Additions.Cheese
 {
     using System;
     using System.Collections.Generic;
@@ -8,18 +8,18 @@
     using BaseClasses;
     using Globals;
 
-    public class Olive : Addition
+    public class BlueCheese : Addition
     {
-        public const decimal PRICE = 0.08m;
-        public const int CALORIES = 70;
-        public const bool VEGETARIAN = true;
+        private const decimal PRICE = 0.1m; // Per gram.  <-- MInd the price
+        private const int CALORIES = 120;
+        private const bool VEGETARIAN = true;
 
-        public Olive(int quantity)
+        public BlueCheese(int quantity)
             : base(quantity)
         {
             this.isVegetarian = VEGETARIAN;
             this.Calories = quantity * CALORIES;
-            this.Quantity = quantity * GlobalConstants.VEGETABLES_QUANTITY;
+            this.Quantity = quantity * GlobalConstants.CHEESE_QUANTITY;
         }
 
         public override decimal Price

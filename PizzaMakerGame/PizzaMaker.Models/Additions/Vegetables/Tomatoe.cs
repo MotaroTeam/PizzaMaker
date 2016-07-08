@@ -6,25 +6,28 @@
     using System.Text;
     using System.Threading.Tasks;
     using BaseClasses;
+    using Globals;
 
     public class Tomatoe : Addition
     {
-        const decimal PRICE = 0.8m;
-        const int QUANTITY_PER_SERVING = 62;  // quantity per serving
-        const int CALORIES = 11;
-        const bool VEGETARIAN = true;
+        public const decimal PRICE = 0.03m;
+        public const int CALORIES = 11;
+        public const bool VEGETARIAN = true;
 
         public Tomatoe(int quantity)
             : base(quantity)
         {
             this.isVegetarian = VEGETARIAN;
-            this.calories = quantity * CALORIES;
-            this.quantity = quantity * QUANTITY_PER_SERVING;
+            this.Calories = quantity * CALORIES;
+            this.Quantity = quantity * GlobalConstants.VEGETABLES_QUANTITY;
         }
 
         public override decimal Price
         {
-            get { return PRICE * QUANTITY_PER_SERVING; }
+            get
+            {
+                return PRICE * this.Quantity;
+            }
         }
     }
 }

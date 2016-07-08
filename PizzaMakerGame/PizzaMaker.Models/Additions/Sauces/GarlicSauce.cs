@@ -1,25 +1,27 @@
 ﻿namespace PizzaMaker.Models.Additions.Sauces
 {
     using BaseClasses;
+    using Globals;
 
     public class GarlicSauce : Addition
     {
-        private const decimal PRICE = 0.05m;
-        private const int QUANTITY = 30; // quantity per serving
-        private const int CALORIES = 53; // per serving
+        private const int CALORIES = 53; 
         private const bool VEGETARIAN = true;
 
         public GarlicSauce(int quantity)
             : base(quantity)
         {
             this.isVegetarian = VEGETARIAN;
-            this.calories = quantity * CALORIES;
-            this.quantity = quantity * QUANTITY;
+            this.Calories = quantity * CALORIES;
+            this.Quantity = quantity * GlobalConstants.SAUCE_QUANTITY;
         }
 
         public override decimal Price
         {
-            get { return PRICE; }
+            get
+            {
+                return GlobalConstants.SAUCE_PRICE * this.Quantity;
+            }
         }
     }
 }
