@@ -13,7 +13,7 @@
 
             var sauceDecorator = SauceDecorator.Instance;
 
-            sauceDecorator.Decorate(pizza,Sauces.Alfredo, 1);
+            sauceDecorator.Decorate(pizza, Sauces.Alfredo, 1);
 
             var price = pizza.Price;
 

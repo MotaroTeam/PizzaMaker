@@ -17,7 +17,7 @@
         public Tomatoe(int quantity)
             : base(quantity)
         {
-            this.isVegetarian = VEGETARIAN;
+            this.IsVegetarian = VEGETARIAN;
             this.Calories = quantity * CALORIES;
             this.Quantity = quantity * GlobalConstants.VEGETABLES_QUANTITY;
         }

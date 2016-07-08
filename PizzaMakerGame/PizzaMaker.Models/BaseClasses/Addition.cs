@@ -5,10 +5,10 @@
 
     public abstract class Addition : IAdditive
     {
-        protected decimal priceValue;
-        protected int calories;
-        protected bool isVegetarian;
-        protected int quantity; // number of pieces
+        private decimal priceValue;
+        private int calories;
+        private bool isVegetarian;
+        private int quantity; // number of pieces
 
         protected Addition(int quantity)
         {
