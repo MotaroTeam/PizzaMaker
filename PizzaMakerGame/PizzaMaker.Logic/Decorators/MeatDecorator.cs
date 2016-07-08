@@ -1,10 +1,10 @@
 ﻿namespace PizzaMaker.Logic.Decorators
 {
     using System;
-    using Models;
-    using Models.Additions.Meat;
-    using Models.BaseClasses;
-    using Models.Interfaces;
+    using PizzaMaker.Models.Additions.Meat;
+    using PizzaMaker.Models.BaseClasses;
+    using PizzaMaker.Models.Enums;
+    using PizzaMaker.Models.Interfaces;
 
     public class MeatDecorator : Decorator
     {
@@ -18,9 +18,33 @@
 
         public override IPizza Decorate(IPizza pizza, Enum type, int quantity)
         {
-            pizza.Additions.Add(new Sausage(quantity));
+            var meat = this.MeatFactory((MeatType)type, quantity);
 
+            pizza.Additions.Add(meat);
+            
             return pizza;
         }
+
+        private IAdditive MeatFactory(MeatType meat, int quantity)
+        {
+            switch (meat)
+            {
+                case MeatType.Beacon:
+                    return new Bacon(quantity);
+                case MeatType.Beef:
+                    return new Beef(quantity);
+                case MeatType.Chicken:
+                    return new Chicken(quantity);
+                case MeatType.Ham:
+                    return new Ham(quantity);
+                case MeatType.Pepperoni:
+                    return new Pepperoni(quantity);
+                case MeatType.Sausage:
+                    return new Sausage(quantity);
+                default:
+                    throw new NullReferenceException("No such meat");
+            }
+        }
+
     }
 }
