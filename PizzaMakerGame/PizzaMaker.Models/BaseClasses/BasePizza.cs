@@ -24,7 +24,7 @@
                     case SizeType.Medium: return 4m;
                     case SizeType.Large: return 6m;
                     default:
-                        throw new NotImplementedException("No Such Size");
+                        throw new ArgumentException("No Such Size");
                 }
             }
         }
