@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Additions\Cheese.cs" />
+    <Compile Include="Additions\Cheese\BlueCheese.cs" />
     <Compile Include="Additions\Meat\Bacon.cs" />
     <Compile Include="Additions\Meat\Beef.cs" />
     <Compile Include="Additions\Meat\Chicken.cs" />
@@ -55,6 +55,12 @@
     <Compile Include="Additions\Sauces\Marinara.cs" />
     <Compile Include="Additions\Sauces\Pesto.cs" />
     <Compile Include="Additions\Sauces\Ranch.cs" />
+    <Compile Include="Additions\Vegetables\Broccoli.cs" />
+    <Compile Include="Additions\Vegetables\Mushroom.cs" />
+    <Compile Include="Additions\Vegetables\Olive.cs" />
+    <Compile Include="Additions\Vegetables\Onion.cs" />
+    <Compile Include="Additions\Vegetables\Pepper.cs" />
+    <Compile Include="Additions\Vegetables\Tomatoe.cs" />
     <Compile Include="BaseClasses\Addition.cs" />
     <Compile Include="BaseClasses\Decorator.cs" />
     <Compile Include="BaseClasses\BasePizza.cs" />
@@ -63,13 +69,13 @@
     <Compile Include="Enums\For.cs" />
     <Compile Include="Enums\Sauces.cs" />
     <Compile Include="Enums\Size.cs" />
+    <Compile Include="Globals\GlobalConstants.cs" />
     <Compile Include="Interfaces\IDeliverable.cs" />
     <Compile Include="Interfaces\IAdditive.cs" />
     <Compile Include="Interfaces\IMaker.cs" />
     <Compile Include="Interfaces\IPizza.cs" />
     <Compile Include="Pizza.cs" />
     <Compile Include="PizzaMaker.cs" />
-    <Compile Include="Additions\Sausage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,7 +86,9 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Globals\Validation\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

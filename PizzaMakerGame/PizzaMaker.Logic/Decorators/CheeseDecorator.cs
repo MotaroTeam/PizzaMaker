@@ -1,9 +1,9 @@
 ﻿namespace PizzaMaker.Logic.Decorators
 {
     using System;
-    using PizzaMaker.Models.Additions;
-    using PizzaMaker.Models.BaseClasses;
-    using PizzaMaker.Models.Interfaces;
+    using Models.Additions.Cheese;
+    using Models.BaseClasses;
+    using Models.Interfaces;
 
     public class CheeseDecorator : Decorator
     {
@@ -17,7 +17,7 @@
 
         public override IPizza Decorate(IPizza pizza, Enum type,  int quantity)
         {
-            pizza.Additions.Add(new Cheese(quantity));
+            pizza.Additions.Add(new BlueCheese(quantity));
 
             return pizza;
         }

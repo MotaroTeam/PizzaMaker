@@ -1,10 +1,11 @@
 ﻿namespace PizzaMaker.Logic.Decorators
 {
     using System;
+    using Models;
+    using Models.Additions.Meat;
     using Models.BaseClasses;
     using Models.Interfaces;
-    using PizzaMaker.Models;
-    
+
     public class SausageDecorator : Decorator
     {
         private static SausageDecorator instance;

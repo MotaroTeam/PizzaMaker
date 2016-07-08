@@ -1,9 +1,8 @@
-﻿using PizzaMaker.Models.BaseClasses;
-using PizzaMaker.Models.Interfaces;
-
-namespace PizzaMaker.Models.Additions.Meat
+﻿namespace PizzaMaker.Models.Additions.Meat
 {
-    class Sausage : Addition, IAdditive
+    using BaseClasses;
+
+    public class Sausage : Addition
     {
 
         private const decimal PRICE = 0.30m;
@@ -11,7 +10,8 @@ namespace PizzaMaker.Models.Additions.Meat
         private const int CALORIES = 90;  // per serving
         private const bool VEGETARIAN = false;
 
-        public Sausage(int quantity) : base(quantity)
+        public Sausage(int quantity)
+            : base(quantity)
         {
             this.isVegetarian = VEGETARIAN;
             this.calories = quantity * CALORIES;
