@@ -15,6 +15,6 @@
 
         IPizza Create(string name, ForType usage, SizeType size);
 
-        void Deliver(string adress);
+        void Deliver(DeliveryClient client);
     }
 }

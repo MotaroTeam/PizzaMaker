@@ -2,6 +2,6 @@
 {
     public interface IDeliverable
     {
-        string Address { get; set; }
+        DeliveryClient Client { get; set; }
     }
 }
