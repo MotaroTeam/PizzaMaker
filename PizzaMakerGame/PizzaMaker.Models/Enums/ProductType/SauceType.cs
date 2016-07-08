@@ -1,4 +1,4 @@
-﻿namespace PizzaMaker.Models.Enums
+﻿namespace PizzaMaker.Models.Enums.ProductType
 {
     public enum SauceType
     {

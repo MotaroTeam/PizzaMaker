@@ -1,9 +1,9 @@
 ﻿namespace PizzaMaker.Logic.Decorators
 {
     using System;
+    using Models.Enums.ProductType;
     using PizzaMaker.Models.Additions.Sauces;
     using PizzaMaker.Models.BaseClasses;
-    using PizzaMaker.Models.Enums;
     using PizzaMaker.Models.Interfaces;
 
     public class SauceDecorator : Decorator

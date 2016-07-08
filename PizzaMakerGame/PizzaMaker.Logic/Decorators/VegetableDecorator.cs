@@ -3,7 +3,7 @@
     using System;
     using Models.Additions.Vegetables;
     using Models.BaseClasses;
-    using Models.Enums;
+    using Models.Enums.ProductType;
     using Models.Interfaces;
 
     public class VegetableDecorator : Decorator
@@ -18,28 +18,28 @@
 
         public override IPizza Decorate(IPizza pizza, Enum type, int quantity)
         {
-            var vegetable = this.VegetableFactory((Vegetables)type, quantity);
+            var vegetable = this.VegetableFactory((VegetablesType)type, quantity);
 
             pizza.Additions.Add(vegetable);
 
             return pizza;
         }
 
-        private IAdditive VegetableFactory(Vegetables sauce, int quantity)
+        private IAdditive VegetableFactory(VegetablesType sauce, int quantity)
         {
             switch (sauce)
             {
-                case Vegetables.Broccoli:
+                case VegetablesType.Broccoli:
                     return new Broccoli(quantity);
-                case Vegetables.Mushroom:
+                case VegetablesType.Mushroom:
                     return new Mushroom(quantity);
-                case Vegetables.Olive:
+                case VegetablesType.Olive:
                     return new Olive(quantity);
-                case Vegetables.Onion:
+                case VegetablesType.Onion:
                     return new Onion(quantity);
-                case Vegetables.Pepper:
+                case VegetablesType.Pepper:
                     return new Pepper(quantity);
-                case Vegetables.Tomatoe:
+                case VegetablesType.Tomatoe:
                     return new Tomatoe(quantity);
                 default:
                     throw new NullReferenceException("No such vegetable");

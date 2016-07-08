@@ -66,11 +66,12 @@
     <Compile Include="BaseClasses\Decorator.cs" />
     <Compile Include="BaseClasses\BasePizza.cs" />
     <Compile Include="DeliveryPizza.cs" />
-    <Compile Include="Enums\Consumables.cs" />
-    <Compile Include="Enums\For.cs" />
-    <Compile Include="Enums\Sauces.cs" />
-    <Compile Include="Enums\Size.cs" />
-    <Compile Include="Enums\Vegetables.cs" />
+    <Compile Include="Enums\ConsumableType.cs" />
+    <Compile Include="Enums\ForType.cs" />
+    <Compile Include="Enums\ProductType\MeatType.cs" />
+    <Compile Include="Enums\ProductType\SauceType.cs" />
+    <Compile Include="Enums\SizeType.cs" />
+    <Compile Include="Enums\ProductType\VegetablesType.cs" />
     <Compile Include="Globals\GlobalConstants.cs" />
     <Compile Include="Globals\Validation\AdditionOverload.cs" />
     <Compile Include="Globals\Validation\ArgumentValidation.cs" />

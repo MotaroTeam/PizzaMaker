@@ -1,9 +1,9 @@
 ﻿namespace PizzaMaker.Logic.Decorators
 {
     using System;
+    using Models.Enums.ProductType;
     using PizzaMaker.Models.Additions.Meat;
     using PizzaMaker.Models.BaseClasses;
-    using PizzaMaker.Models.Enums;
     using PizzaMaker.Models.Interfaces;
 
     public class MeatDecorator : Decorator
@@ -45,6 +45,5 @@
                     throw new NullReferenceException("No such meat");
             }
         }
-
     }
 }

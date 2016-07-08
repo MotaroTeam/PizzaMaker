@@ -4,6 +4,7 @@
     using Logic.Decorators;
     using Models;
     using Models.Enums;
+    using Models.Enums.ProductType;
 
     public static class Startup
     {
