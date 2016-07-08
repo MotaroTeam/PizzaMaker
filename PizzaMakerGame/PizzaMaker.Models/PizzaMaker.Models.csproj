@@ -42,6 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Additions\Cheese.cs" />
+    <Compile Include="Additions\Meat\Bacon.cs" />
+    <Compile Include="Additions\Meat\Beef.cs" />
+    <Compile Include="Additions\Meat\Chicken.cs" />
+    <Compile Include="Additions\Meat\Ham.cs" />
+    <Compile Include="Additions\Meat\Pepperoni.cs" />
+    <Compile Include="Additions\Meat\Sausage.cs" />
     <Compile Include="Additions\Sauces\Alfredo.cs" />
     <Compile Include="Additions\Sauces\Chily.cs" />
     <Compile Include="Additions\Sauces\GarlicSauce.cs" />
