@@ -1,12 +1,11 @@
 ﻿namespace PizzaMaker.Models.Additions.Meat
 {
     using BaseClasses;
-    using Interfaces;
+    using Globals;
 
-    public class Beef : Addition, IAdditive
+    public class Beef : Addition
     {
         private const decimal PRICE = 0.45m;
-        private const int QUANTITY = 30;  // quantity per serving
         private const int CALORIES = 75;  // per serving
         private const bool VEGETARIAN = false;
 
@@ -15,12 +14,12 @@
         {
             this.IsVegetarian = VEGETARIAN;
             this.Calories = quantity * CALORIES;
-            this.Quantity = quantity * QUANTITY;
+            this.Quantity = quantity * GlobalConstants.MEAT_QUANTITY;
         }
 
         public override decimal Price
         {
-            get { return PRICE; }
+            get { return PRICE * this.Quantity; }
         }
     }
 }
