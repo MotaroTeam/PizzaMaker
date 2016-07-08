@@ -70,6 +70,7 @@
     <Compile Include="Enums\For.cs" />
     <Compile Include="Enums\Sauces.cs" />
     <Compile Include="Enums\Size.cs" />
+    <Compile Include="Enums\Vegetables.cs" />
     <Compile Include="Globals\GlobalConstants.cs" />
     <Compile Include="Interfaces\IDeliverable.cs" />
     <Compile Include="Interfaces\IAdditive.cs" />
