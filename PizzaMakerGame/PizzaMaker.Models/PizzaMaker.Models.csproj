@@ -72,6 +72,7 @@
     <Compile Include="Enums\Size.cs" />
     <Compile Include="Enums\Vegetables.cs" />
     <Compile Include="Globals\GlobalConstants.cs" />
+    <Compile Include="Globals\Validation\ArgumentValidation.cs" />
     <Compile Include="Interfaces\IDeliverable.cs" />
     <Compile Include="Interfaces\IAdditive.cs" />
     <Compile Include="Interfaces\IMaker.cs" />
@@ -89,9 +90,7 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Globals\Validation\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

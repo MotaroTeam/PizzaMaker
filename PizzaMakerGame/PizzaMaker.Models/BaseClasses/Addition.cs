@@ -1,6 +1,7 @@
 ﻿namespace PizzaMaker.Models.BaseClasses
 {
     using System;
+    using Globals.Validation;
     using Interfaces;
 
     public abstract class Addition : IAdditive
@@ -23,10 +24,7 @@
 
             protected set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentOutOfRangeException("Calories of additives cannot be negative");
-                }
+                ArgumentValidation.NegativeValueValidation(value, "Calories of additives");
 
                 this.calories = value;
             }
@@ -61,13 +59,10 @@
 
             protected set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentOutOfRangeException("Quantity of additives cannot be negative");
-                }
+                ArgumentValidation.NegativeValueValidation(value, "Quantity of additives");
 
                 this.quantity = value;
             }
         }
-      }
+    }
 }
