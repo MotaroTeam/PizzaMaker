@@ -5,12 +5,12 @@
 
     public class DeliveryPizza : BasePizza, IDeliverable
     {
-        public DeliveryPizza(string address, string name)
+        public DeliveryPizza(DeliveryClient client, string name)
             : base(name)
         {
-            this.Address = address;
+            this.Client = client;
         }
 
-        public string Address { get; set; }
+        public DeliveryClient Client { get; set; }
     }
 }

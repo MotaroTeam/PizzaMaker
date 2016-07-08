@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdditionParameters.cs" />
     <Compile Include="Additions\Cheese\BlueCheese.cs" />
     <Compile Include="Additions\Meat\Bacon.cs" />
     <Compile Include="Additions\Meat\Beef.cs" />
@@ -65,6 +64,7 @@
     <Compile Include="BaseClasses\Addition.cs" />
     <Compile Include="BaseClasses\Decorator.cs" />
     <Compile Include="BaseClasses\BasePizza.cs" />
+    <Compile Include="DeliveryClient.cs" />
     <Compile Include="DeliveryPizza.cs" />
     <Compile Include="Enums\ConsumableType.cs" />
     <Compile Include="Enums\ForType.cs" />

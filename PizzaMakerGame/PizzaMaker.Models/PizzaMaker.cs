@@ -1,5 +1,6 @@
 ﻿namespace PizzaMaker.Models
 {
+    using System;
     using System.Collections.Generic;
     using Enums;
     using Interfaces;
@@ -32,9 +33,9 @@
             throw new System.NotImplementedException();
         }
 
-        public void Deliver(string adress)
+        public void Deliver(DeliveryClient client)
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine(client.ToString());
         }
     }
 }
