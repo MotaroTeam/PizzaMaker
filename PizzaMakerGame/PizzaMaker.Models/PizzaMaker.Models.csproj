@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdditionParameters.cs" />
     <Compile Include="Additions\Cheese\BlueCheese.cs" />
     <Compile Include="Additions\Meat\Bacon.cs" />
     <Compile Include="Additions\Meat\Beef.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Interfaces\IAdditive.cs" />
     <Compile Include="Interfaces\IMaker.cs" />
     <Compile Include="Interfaces\IPizza.cs" />
+    <Compile Include="Interfaces\IRenderer.cs" />
     <Compile Include="Pizza.cs" />
     <Compile Include="PizzaMaker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
