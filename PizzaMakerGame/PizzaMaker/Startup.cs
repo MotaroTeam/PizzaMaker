@@ -1,6 +1,7 @@
 ﻿namespace PizzaMaker
 {
     using System;
+    using ConsoleRenderer;
     using Logic.Decorators;
     using Models;
     using Models.Enums;
@@ -10,23 +11,19 @@
     {
         public static void Main()
         {
-            var pizza = new Pizza("Yaka Pica", ForType.Here, SizeType.Large);
+            var renderer = new ConsoleRenderer();
+
+            var pizzaName = renderer.Input("Pizza name");
+
+            var forWhere = renderer.InputFromEnum<ForType>("Choose ....");
+
+            var pizza = new Pizza(pizzaName, (ForType)forWhere, SizeType.Large);
 
             var sauceDecorator = SauceDecorator.Instance;
 
             sauceDecorator.Decorate(pizza, SauceType.Alfredo, 1);
 
-            var price = pizza.Price;
-
-            Console.WriteLine(pizza.Name);
-            Console.WriteLine("ingredients: ");
-            foreach (var addition in pizza.Additions)
-            {
-                price += addition.Quantity * addition.Price;
-                Console.WriteLine($"{addition.Name} - {addition.Quantity}");
-            }
-
-            Console.WriteLine("Price: " + price);
+            renderer.RenderPizza(pizza);
 
             Console.ReadKey();
         }

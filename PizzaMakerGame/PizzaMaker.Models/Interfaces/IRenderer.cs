@@ -4,7 +4,10 @@
 
     public interface IRenderer
     {
-        string Input();
+        string Input(string prompt);
+
+        int InputFromEnum<T>(string prompt) 
+            where T : struct;
 
         void RenderPizza(IPizza pizza);
 

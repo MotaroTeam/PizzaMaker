@@ -1,7 +1,7 @@
 ﻿namespace PizzaMaker.Models.Interfaces
 {
     using System.Collections.Generic;
-    using global::PizzaMaker.Models.Enums;
+    using Enums;
 
     public interface IMaker
     {

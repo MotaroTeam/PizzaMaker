@@ -9,6 +9,8 @@
 
         SizeType Size { get; }
 
+        decimal Price { get; }
+
         ForType For { get; set; }
 
         ICollection<IAdditive> Additions { get; }
