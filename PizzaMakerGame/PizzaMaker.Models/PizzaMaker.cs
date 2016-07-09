@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using Enums;
     using Interfaces;
+    using System.Text;
 
     public class PizzaMaker : IMaker
     {
@@ -30,7 +31,7 @@
 
         public IPizza Create(string name, ForType usage, SizeType size)
         {
-            throw new System.NotImplementedException();
+            return new Pizza(name, usage, size);
         }
 
         public void Deliver(DeliveryClient client)

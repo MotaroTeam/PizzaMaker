@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Text;
     using PizzaMaker.Models.Interfaces;
 
     public class ConsoleRenderer : IRenderer
@@ -32,17 +33,19 @@
 
         public void RenderPizza(IPizza pizza)
         {
+            StringBuilder builder = new StringBuilder();
             var price = pizza.Price;
 
-            Console.WriteLine(pizza.Name);
-            Console.WriteLine("ingredients: ");
+            builder.AppendLine(pizza.Name);
+            builder.AppendLine("Chosen ingredients: ");
             foreach (var addition in pizza.Additions)
             {
                 price += addition.Quantity * addition.Price;
-                Console.WriteLine($"{addition.Name} - {addition.Quantity}");
+                builder.AppendLine(string.Format("->{0} - {1}", addition.Name, addition.Quantity));
             }
 
-            Console.WriteLine("Price: " + price);
+            builder.AppendLine(string.Format("Total price: ${0}", price));
+            Console.WriteLine(builder.ToString());
         }
 
         public void RenderAdditions(ICollection<IAdditive> additions)
