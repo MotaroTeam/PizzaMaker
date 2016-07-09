@@ -4,7 +4,6 @@
     using System.Collections.Generic;
     using Enums;
     using Interfaces;
-    ////test
 
     public class PizzaMaker : IMaker
     {

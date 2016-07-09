@@ -59,6 +59,10 @@
     <Compile Include="Additions\Sauces\Marinara.cs" />
     <Compile Include="Additions\Sauces\Pesto.cs" />
     <Compile Include="Additions\Sauces\Ranch.cs" />
+    <Compile Include="Additions\Spices\Basil.cs" />
+    <Compile Include="Additions\Spices\Oregano.cs" />
+    <Compile Include="Additions\Spices\Rosemary.cs" />
+    <Compile Include="Additions\Spices\Savory.cs" />
     <Compile Include="Additions\Vegetables\Broccoli.cs" />
     <Compile Include="Additions\Vegetables\Mushroom.cs" />
     <Compile Include="Additions\Vegetables\Olive.cs" />
@@ -75,6 +79,7 @@
     <Compile Include="Enums\ProductType\FruitType.cs" />
     <Compile Include="Enums\ProductType\MeatType.cs" />
     <Compile Include="Enums\ProductType\SauceType.cs" />
+    <Compile Include="Enums\ProductType\SpiceType.cs" />
     <Compile Include="Enums\SizeType.cs" />
     <Compile Include="Enums\ProductType\VegetablesType.cs" />
     <Compile Include="Globals\GlobalConstants.cs" />
