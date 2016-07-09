@@ -1,7 +1,7 @@
 ﻿namespace PizzaMaker.Logic.Decorators
 {
     using System;
-    using Models.Additions.Fruits;
+    using Models.Additions.Spices;
     using Models.BaseClasses;
     using Models.Enums.ProductType;
     using Models.Interfaces;
@@ -30,13 +30,13 @@
             switch (spice)
             {
                 case SpiceType.Savory:
-                    return new Apple(quantity);
+                    return new Savory(quantity);
                 case SpiceType.Basil:
-                    return new Pineapple(quantity);
+                    return new Basil(quantity);
                 case SpiceType.Oregano:
-                    return new Mango(quantity);
+                    return new Oregano(quantity);
                 case SpiceType.Rosemary:
-                    return new Avocado(quantity);
+                    return new Rosemary(quantity);
                 default:
                     throw new NullReferenceException("No such spice avaliable");
             }
