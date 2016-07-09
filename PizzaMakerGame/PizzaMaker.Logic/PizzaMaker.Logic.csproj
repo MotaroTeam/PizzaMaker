@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Decorators\CheeseDecorator.cs" />
+    <Compile Include="Decorators\FruitDecorator.cs" />
     <Compile Include="Decorators\MeatDecorator.cs" />
     <Compile Include="Decorators\SauceDecorator.cs" />
     <Compile Include="Decorators\VegetableDecorator.cs" />

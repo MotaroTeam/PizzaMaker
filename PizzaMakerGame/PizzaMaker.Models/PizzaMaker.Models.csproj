@@ -42,6 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Additions\Cheese\BlueCheese.cs" />
+    <Compile Include="Additions\Fruits\Apple.cs" />
+    <Compile Include="Additions\Fruits\Avocado.cs" />
+    <Compile Include="Additions\Fruits\Mango.cs" />
+    <Compile Include="Additions\Fruits\Pineapple.cs" />
     <Compile Include="Additions\Meat\Bacon.cs" />
     <Compile Include="Additions\Meat\Beef.cs" />
     <Compile Include="Additions\Meat\Chicken.cs" />
@@ -68,6 +72,7 @@
     <Compile Include="DeliveryPizza.cs" />
     <Compile Include="Enums\ConsumableType.cs" />
     <Compile Include="Enums\ForType.cs" />
+    <Compile Include="Enums\ProductType\FruitType.cs" />
     <Compile Include="Enums\ProductType\MeatType.cs" />
     <Compile Include="Enums\ProductType\SauceType.cs" />
     <Compile Include="Enums\SizeType.cs" />
