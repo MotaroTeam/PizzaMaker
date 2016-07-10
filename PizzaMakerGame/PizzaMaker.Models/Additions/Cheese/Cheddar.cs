@@ -3,13 +3,13 @@
     using BaseClasses;
     using Globals;
 
-    public class BlueCheese : Addition
+    public class Cheddar : Addition
     {
-        private const decimal PRICE = 0.2m; // Per gram.  <-- MInd the price
-        private const int CALORIES = 140;
+        private const decimal PRICE = 0.15m; // Per gram.  <-- MInd the price
+        private const int CALORIES = 161;
         private const bool VEGETARIAN = true;
 
-        public BlueCheese(int quantity)
+        public Cheddar(int quantity)
             : base(quantity)
         {
             this.IsVegetarian = VEGETARIAN;
