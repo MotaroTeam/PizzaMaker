@@ -5,20 +5,19 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using PizzaMaker.Models.Enums;
     using PizzaMaker.Models.Globals;
     using PizzaMaker.Models.Interfaces;
 
     public static class AdditionMenu
     {
-        private static ICollection<IAdditive> additions = new List<IAdditive>();
-
-        public static void PrintMenu(ICollection<IAdditive> additionsList)
+        public static void PrintMenu(List<IAdditive> pizzaAdditions)
         {
             StringBuilder builder = new StringBuilder();
 
             builder.AppendLine(GlobalConstants.SmallSeparator);
 
-            foreach (var addition in additionsList)
+            foreach (var addition in pizzaAdditions)
             {
                 builder.AppendLine(string.Format("= {0} ", addition.GetType().Name));
             }
@@ -28,9 +27,5 @@
             Console.WriteLine(builder.ToString());
         }
 
-        public static void AddToList(IAdditive addition)
-        {
-            additions.Add(addition);
-        }
     }
 }

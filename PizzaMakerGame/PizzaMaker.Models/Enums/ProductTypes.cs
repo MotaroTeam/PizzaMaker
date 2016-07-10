@@ -8,11 +8,12 @@
 
     public enum ProductTypes
     {
-        CheeseType = 0,
-        FruitType = 1,
-        MeatType = 2,
-        SauceType = 3,
-        SpiceType = 4,
-        VegetablesType = 5
+        Finished = 0,
+        CheeseType = 1,
+        FruitType = 2,
+        MeatType = 3,
+        SauceType = 4,
+        SpiceType = 5,
+        VegetablesType = 6
     }
 }

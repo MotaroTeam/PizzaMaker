@@ -26,5 +26,7 @@
         public static string SmallSeparator = new string('=', 30);
 
         public static string BiggerSeparator = new string('-', 60);
+
+        public static int ProductCategoryCount = 6;
     }
 }
