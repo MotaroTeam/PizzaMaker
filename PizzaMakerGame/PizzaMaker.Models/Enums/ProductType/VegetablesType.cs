@@ -7,6 +7,6 @@
         Olive = 2,
         Onion = 3,
         Pepper = 4,
-        Tomatoe = 5
+        Tomato = 5
     }
 }
