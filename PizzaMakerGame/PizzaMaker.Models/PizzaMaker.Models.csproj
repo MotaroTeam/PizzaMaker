@@ -82,6 +82,7 @@
     <Compile Include="DeliveryPizza.cs" />
     <Compile Include="Enums\ConsumableType.cs" />
     <Compile Include="Enums\ForType.cs" />
+    <Compile Include="Enums\ProductTypes.cs" />
     <Compile Include="Enums\ProductType\CheeseType.cs" />
     <Compile Include="Enums\ProductType\FruitType.cs" />
     <Compile Include="Enums\ProductType\MeatType.cs" />

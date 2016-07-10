@@ -23,8 +23,8 @@
 
         public const decimal SAUCE_PRICE = 0.02m; // Per grams.
 
-        public string SmallSeparator = new string('=', 30);
+        public static string SmallSeparator = new string('=', 30);
 
-        public string BiggerSeparator = new string('-', 60);
+        public static string BiggerSeparator = new string('-', 60);
     }
 }

@@ -15,9 +15,11 @@
 
             var pizzaName = renderer.Input("Pizza name");
 
-            var forWhere = renderer.InputFromEnum<ForType>("Choose ....");
+            var forWhere = renderer.InputFromEnum<ForType>("Choose for: ");
 
-            var pizza = new Pizza(pizzaName, (ForType)forWhere, SizeType.Large);
+            var size = renderer.InputFromEnum<SizeType>("Choose size: ");
+
+            var pizza = new Pizza(pizzaName, (ForType)forWhere, (SizeType)size);
 
             var sauceDecorator = SauceDecorator.Instance;
 

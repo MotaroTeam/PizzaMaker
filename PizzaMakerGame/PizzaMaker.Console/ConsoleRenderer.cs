@@ -3,10 +3,20 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
+    using PizzaMaker.Models.Globals;
     using PizzaMaker.Models.Interfaces;
 
     public class ConsoleRenderer : IRenderer
     {
+        public ConsoleRenderer()
+        {
+            Console.WindowWidth = 100;
+            Console.BufferWidth = 100;
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.Clear();
+        }
+
         public string Input(string prompt = "")
         {
             Console.Write(string.IsNullOrWhiteSpace(prompt) ? string.Empty : prompt + ": ");
@@ -18,12 +28,18 @@
         public int InputFromEnum<T>(string prompt = "")
             where T : struct
         {
+            Console.Clear();
+            // TODO : SetCursor to somewhere in the right part and print the list AdditionMenu.PrintMenu()
+            Console.WriteLine(GlobalConstants.SmallSeparator);
             foreach (var e in Enum.GetValues(typeof(T)))
             {
                 Console.WriteLine(e + " - " + (int)e);
             }
 
-            Console.Write(prompt);
+            Console.WriteLine(GlobalConstants.SmallSeparator);
+            Console.WriteLine(prompt);
+            Console.WriteLine(GlobalConstants.SmallSeparator);
+
             int input;
             while (!int.TryParse(Console.ReadLine(), out input) || !Enum.IsDefined(typeof(T), input))
             {
@@ -32,7 +48,8 @@
             }
 
             Console.WriteLine("Your choice: {0}", Enum.GetName(typeof(T), input));
-
+            Console.WriteLine(GlobalConstants.BiggerSeparator);
+            // TODO: Add chosen input to MenuList if it is an Addition
             return input;
         }
 
