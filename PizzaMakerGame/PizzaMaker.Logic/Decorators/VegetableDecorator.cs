@@ -39,8 +39,8 @@
                     return new Onion(quantity);
                 case VegetablesType.Pepper:
                     return new Pepper(quantity);
-                case VegetablesType.Tomatoe:
-                    return new Tomatoe(quantity);
+                case VegetablesType.Tomato:
+                    return new Tomato(quantity);
                 default:
                     throw new NullReferenceException("No such vegetable");
             }

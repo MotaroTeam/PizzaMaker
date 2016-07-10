@@ -6,7 +6,7 @@
     using Models.Enums.ProductType;
     using Models.Interfaces;
 
-    class SpiceDecorator : Decorator
+    public class SpiceDecorator : Decorator
     {
         private static SpiceDecorator instance;
 
