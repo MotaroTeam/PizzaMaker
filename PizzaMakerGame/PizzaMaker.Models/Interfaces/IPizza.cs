@@ -13,6 +13,6 @@
 
         ForType For { get; set; }
 
-        ICollection<IAdditive> Additions { get; }
+        IList<IAdditive> Additions { get; }
     }
 }

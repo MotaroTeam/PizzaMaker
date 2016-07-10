@@ -11,21 +11,22 @@
 
     public static class AdditionMenu
     {
-        public static void PrintMenu(List<IAdditive> pizzaAdditions)
+        public static void PrintMenu(IList<IAdditive> pizzaAdditions)
         {
-            StringBuilder builder = new StringBuilder();
+            Console.SetCursorPosition(40, 0);
+            Console.WriteLine("Ingridients choosen: ");
+            Console.SetCursorPosition(40, 1);
+            Console.WriteLine(GlobalConstants.SmallSeparator);
 
-            builder.AppendLine(GlobalConstants.SmallSeparator);
-
-            foreach (var addition in pizzaAdditions)
+            // TODO: Add ingridient characteristics from here
+            for (int i = 0; i < pizzaAdditions.Count; i++)
             {
-                builder.AppendLine(string.Format("= {0} ", addition.GetType().Name));
+                Console.SetCursorPosition(40, i + 2);
+                Console.WriteLine(string.Format(" -> {0}".PadRight(25, ' '), pizzaAdditions[i].GetType().Name));
             }
 
-            builder.AppendLine(GlobalConstants.SmallSeparator);
-
-            Console.WriteLine(builder.ToString());
+            Console.SetCursorPosition(40, 2 + pizzaAdditions.Count + 1);
+            Console.WriteLine(GlobalConstants.SmallSeparator);
         }
-
     }
 }

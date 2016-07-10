@@ -12,8 +12,10 @@
         {
             Console.WindowWidth = 100;
             Console.BufferWidth = 100;
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
+
+            // Can change colors from here
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Clear();
         }
 
@@ -28,8 +30,6 @@
         public int InputFromEnum<T>(string prompt = "")
             where T : struct
         {
-            Console.Clear();
-
             // TODO : SetCursor to somewhere in the right part and print the list AdditionMenu.PrintMenu()
             Console.WriteLine(GlobalConstants.SmallSeparator);
             foreach (var e in Enum.GetValues(typeof(T)))

@@ -35,6 +35,6 @@
 
         public ForType For { get; set; }
 
-        public ICollection<IAdditive> Additions { get; set; }
+        public IList<IAdditive> Additions { get; set; }
     }
 }

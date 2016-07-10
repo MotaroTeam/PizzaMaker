@@ -12,6 +12,7 @@
     {
         public static void Main()
         {
+            // TODO: Optionally change buffer/window size
             var renderer = new ConsoleRenderer();
 
             var pizzaName = renderer.Input("Pizza name");
@@ -22,11 +23,17 @@
 
             var pizza = new Pizza(pizzaName, (ForType)forWhere, (SizeType)size);
 
+            Console.Clear();
+            AdditionMenu.PrintMenu(pizza.Additions);
+
             int additionCategory = renderer.InputFromEnum<ProductTypes>("Choose category: ");
 
             while (additionCategory != 0)
             {
                 int addition = 0;
+
+                Console.Clear();
+                AdditionMenu.PrintMenu(pizza.Additions);
 
                 // TODO : Implement multiple choice of additions at once
                 switch (additionCategory)
@@ -65,9 +72,13 @@
                         throw new ArgumentException("No such category!");
                 }
 
+                Console.Clear();
+                AdditionMenu.PrintMenu(pizza.Additions);
+
                 additionCategory = renderer.InputFromEnum<ProductTypes>("Choose category: ");
             }
 
+            // TODO: Lower the price of additions
             renderer.RenderPizza(pizza);
 
             Console.ReadKey();
