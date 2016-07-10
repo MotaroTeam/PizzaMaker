@@ -42,6 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Additions\Cheese\BlueCheese.cs" />
+    <Compile Include="Additions\Cheese\Cheddar.cs" />
+    <Compile Include="Additions\Cheese\Emmental.cs" />
+    <Compile Include="Additions\Cheese\Feta.cs" />
+    <Compile Include="Additions\Cheese\Gouda.cs" />
+    <Compile Include="Additions\Cheese\Mozzarella.cs" />
+    <Compile Include="Additions\Cheese\SmokedCheese.cs" />
     <Compile Include="Additions\Fruits\Apple.cs" />
     <Compile Include="Additions\Fruits\Avocado.cs" />
     <Compile Include="Additions\Fruits\Mango.cs" />
@@ -68,7 +74,7 @@
     <Compile Include="Additions\Vegetables\Olive.cs" />
     <Compile Include="Additions\Vegetables\Onion.cs" />
     <Compile Include="Additions\Vegetables\Pepper.cs" />
-    <Compile Include="Additions\Vegetables\Tomatoe.cs" />
+    <Compile Include="Additions\Vegetables\Tomato.cs" />
     <Compile Include="BaseClasses\Addition.cs" />
     <Compile Include="BaseClasses\Decorator.cs" />
     <Compile Include="BaseClasses\BasePizza.cs" />
@@ -76,6 +82,7 @@
     <Compile Include="DeliveryPizza.cs" />
     <Compile Include="Enums\ConsumableType.cs" />
     <Compile Include="Enums\ForType.cs" />
+    <Compile Include="Enums\ProductType\CheeseType.cs" />
     <Compile Include="Enums\ProductType\FruitType.cs" />
     <Compile Include="Enums\ProductType\MeatType.cs" />
     <Compile Include="Enums\ProductType\SauceType.cs" />
