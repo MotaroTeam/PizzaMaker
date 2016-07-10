@@ -24,9 +24,14 @@
             }
 
             Console.Write(prompt);
+            int input;
+            while (!int.TryParse(Console.ReadLine(), out input) || !Enum.IsDefined(typeof(T), input))
+            {
+                Console.WriteLine("No such option");
+                Console.Write("Choose again: ");
+            }
 
-            // TODO: rework to TryParse output to exist in the enum
-            var input = int.Parse(Console.ReadLine());
+            Console.WriteLine("Your choice: {0}", Enum.GetName(typeof(T), input));
 
             return input;
         }
