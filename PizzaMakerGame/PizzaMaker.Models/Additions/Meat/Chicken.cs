@@ -5,7 +5,7 @@
 
     public class Chicken : Addition
     {
-        private const decimal PRICE = 0.35m;
+        private const decimal PRICE = 0.03m;
         private const int CALORIES = 40;  // per serving
         private const bool VEGETARIAN = false;
 

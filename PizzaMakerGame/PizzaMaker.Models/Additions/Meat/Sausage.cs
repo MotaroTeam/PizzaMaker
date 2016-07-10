@@ -5,7 +5,7 @@
 
     public class Sausage : Addition
     {
-        private const decimal PRICE = 0.30m;
+        private const decimal PRICE = 0.02m;
         private const int CALORIES = 90;  // per serving
         private const bool VEGETARIAN = false;
 

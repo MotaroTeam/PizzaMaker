@@ -5,7 +5,7 @@
 
     public class Ham : Addition
     {
-        private const decimal PRICE = 0.30m;
+        private const decimal PRICE = 0.02m;
         private const int CALORIES = 40;  // per serving
         private const bool VEGETARIAN = false;
 

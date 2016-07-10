@@ -5,7 +5,7 @@
 
     public class Bacon : Addition
     {
-        private const decimal PRICE = 0.40m;
+        private const decimal PRICE = 0.03m;
         private const int CALORIES = 100;   // per serving
         private const bool VEGETARIAN = false;
 
