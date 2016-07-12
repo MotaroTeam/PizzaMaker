@@ -19,12 +19,14 @@
 
         public const decimal SAUCE_PRICE = 0.02m; // Per grams.
 
-        public const ConsoleColor DefaultColor = ConsoleColor.Green;
+        public const ConsoleColor DefaultColor = ConsoleColor.DarkBlue;
 
         public const int ProductCategoryCount = 6;
 
         public static readonly string SmallSeparator = new string('=', 30);
 
         public static readonly string BiggerSeparator = new string('-', 90);
+
+        public const string MakerName = "Ivan";
     }
 }

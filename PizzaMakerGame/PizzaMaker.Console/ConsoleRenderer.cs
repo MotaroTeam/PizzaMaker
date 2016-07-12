@@ -5,22 +5,43 @@
     using System.Text;
     using Common;
     using PizzaMaker.Models.Interfaces;
-
+    using PizzaMaker.Models;
     public class ConsoleRenderer : IRenderer
     {
-        
-
         public ConsoleRenderer()
         {
             Console.WindowWidth = 100;
             Console.BufferWidth = 100;
+
             Console.CursorVisible = false;
 
-            // Can change colors from here
-            Console.BackgroundColor = ConsoleColor.DarkGreen;
-            // TODO: change as needed
-            Console.ForegroundColor = GlobalConstants.DefaultColor;
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.Clear();
+        }
+
+        public static void PrintMenu(IPizza pizza)
+        {
+            Console.Clear();
+            AdditionMenu.PrintMenu(pizza.Additions);
+        }
+
+        public static DeliveryClient GetClientDetails()
+        {
+
+            Console.WriteLine("Enter name: ");
+
+            var clientName = Console.ReadLine();
+
+            Console.WriteLine("Enter your address: ");
+
+            var clientAdress = Console.ReadLine();
+
+            Console.WriteLine("Enter phone number: ");
+
+            var clientNumber = Console.ReadLine();
+
+            return new DeliveryClient(clientName, clientAdress, clientNumber);
         }
 
         public string Input(string prompt = "")
@@ -34,7 +55,6 @@
         public int InputFromEnum<T>(string prompt = "", ConsoleColor color = GlobalConstants.DefaultColor)
             where T : struct
         {
-            // TODO : SetCursor to somewhere in the right part and print the list AdditionMenu.PrintMenu()
             Console.WriteLine(GlobalConstants.SmallSeparator);
 
             Console.ForegroundColor = color;
@@ -59,7 +79,6 @@
             Console.WriteLine("Your choice: {0}", Enum.GetName(typeof(T), input));
             Console.WriteLine(GlobalConstants.BiggerSeparator);
 
-            // TODO: Add chosen input to MenuList if it is an Addition
             return input;
         }
 

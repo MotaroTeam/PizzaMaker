@@ -59,6 +59,14 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{9e59a215-f353-435b-b0d4-a2560ac1f907}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PizzaMaker.Console\PizzaMaker.Console.csproj">
+      <Project>{0c40b1b8-634b-4a1e-952b-10cf36583449}</Project>
+      <Name>PizzaMaker.Console</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PizzaMaker.Models\PizzaMaker.Models.csproj">
       <Project>{2ed4317d-647f-4e27-b1ed-37c9ad532554}</Project>
       <Name>PizzaMaker.Models</Name>

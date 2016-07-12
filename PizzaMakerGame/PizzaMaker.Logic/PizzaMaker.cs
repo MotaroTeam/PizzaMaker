@@ -2,6 +2,8 @@
 {
     using System;
     using System.Collections.Generic;
+    using Common;
+    using ConsoleRenderer;
     using Decorators;
     using Models;
     using Models.Enums;
@@ -12,9 +14,9 @@
     {
         private IRenderer render;
 
-        public PizzaMaker(string name, IRenderer render)
+        public PizzaMaker(IRenderer render)
         {
-            this.Name = name;
+            this.Name = GlobalConstants.MakerName;
             this.render = render;
         }
 
@@ -40,8 +42,7 @@
         {
             var pizza = new Pizza(name, usage, size);
 
-            //Console.Clear();
-            //AdditionMenu.PrintMenu(pizza.Additions);
+            ConsoleRenderer.PrintMenu(pizza);
 
             int additionCategory = this.Render.InputFromEnum<ProductTypes>("Choose category: ");
 
@@ -49,8 +50,7 @@
             {
                 int addition = 0;
 
-                //Console.Clear();
-                //AdditionMenu.PrintMenu(pizza.Additions);
+                ConsoleRenderer.PrintMenu(pizza);
 
                 switch (additionCategory)
                 {
@@ -88,8 +88,7 @@
                         throw new ArgumentException("No such category!");
                 }
 
-                //Console.Clear();
-                //AdditionMenu.PrintMenu(pizza.Additions);
+                ConsoleRenderer.PrintMenu(pizza);
 
                 additionCategory = this.Render.InputFromEnum<ProductTypes>("Choose category: ");
             }

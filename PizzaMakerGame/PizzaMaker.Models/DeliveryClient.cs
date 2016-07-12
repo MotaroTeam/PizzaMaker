@@ -1,6 +1,9 @@
 ﻿namespace PizzaMaker.Models
 {
-    public struct DeliveryClient
+    using System;
+    using PizzaMaker.Models.Interfaces;
+
+    public struct DeliveryClient 
     {
         private string name;
         private string address;

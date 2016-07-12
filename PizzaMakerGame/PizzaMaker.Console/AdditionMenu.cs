@@ -14,7 +14,6 @@
             Console.SetCursorPosition(40, 1);
             Console.WriteLine(GlobalConstants.SmallSeparator);
 
-            // TODO: Add ingridient characteristics from here
             for (int i = 0; i < pizzaAdditions.Count; i++)
             {
                 Console.SetCursorPosition(40, i + 2);
