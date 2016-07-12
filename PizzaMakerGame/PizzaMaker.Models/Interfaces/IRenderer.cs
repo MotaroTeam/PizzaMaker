@@ -2,12 +2,13 @@
 {
     using System;
     using System.Collections.Generic;
+    using Common;
 
     public interface IRenderer
     {
         string Input(string prompt);
 
-        int InputFromEnum<T>(string prompt, ConsoleColor color) 
+        int InputFromEnum<T>(string prompt, ConsoleColor color = GlobalConstants.DefaultColor) 
             where T : struct;
 
         void RenderPizza(IPizza pizza);

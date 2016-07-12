@@ -6,7 +6,7 @@
     using System.Text;
     using System.Threading.Tasks;
     using BaseClasses;
-    using Globals;
+    using Common;
 
     public class Onion : Addition
     {

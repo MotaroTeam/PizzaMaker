@@ -1,7 +1,7 @@
 ﻿namespace PizzaMaker.Models.Additions.Fruits
 {
     using BaseClasses;
-    using Globals;
+    using Common;
 
     public class Avocado : Addition
     {

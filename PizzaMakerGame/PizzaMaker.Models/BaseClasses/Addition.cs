@@ -1,7 +1,7 @@
 ﻿namespace PizzaMaker.Models.BaseClasses
 {
     using System;
-    using Globals.Validation;
+    using Common.Validation;
     using Interfaces;
 
     public abstract class Addition : IAdditive

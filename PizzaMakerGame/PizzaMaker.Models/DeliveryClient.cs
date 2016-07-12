@@ -1,7 +1,5 @@
 ﻿namespace PizzaMaker.Models
 {
-    using Globals.Validation;
-
     public struct DeliveryClient
     {
         private string name;

@@ -1,7 +1,7 @@
 ﻿namespace PizzaMaker.Models.Additions.Sauces
 {
     using BaseClasses;
-    using Globals;
+    using Common;
 
     public class Pesto : Addition
     {

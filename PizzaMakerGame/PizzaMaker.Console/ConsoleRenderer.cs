@@ -3,13 +3,12 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
-    using PizzaMaker.Models.Globals;
+    using Common;
     using PizzaMaker.Models.Interfaces;
 
     public class ConsoleRenderer : IRenderer
     {
-        // TODO: change as needed
-        private const ConsoleColor DefaultColor = ConsoleColor.Green;
+        
 
         public ConsoleRenderer()
         {
@@ -19,7 +18,8 @@
 
             // Can change colors from here
             Console.BackgroundColor = ConsoleColor.DarkGreen;
-            Console.ForegroundColor = DefaultColor;
+            // TODO: change as needed
+            Console.ForegroundColor = GlobalConstants.DefaultColor;
             Console.Clear();
         }
 
@@ -31,7 +31,7 @@
             return input;
         }
 
-        public int InputFromEnum<T>(string prompt = "", ConsoleColor color = DefaultColor)
+        public int InputFromEnum<T>(string prompt = "", ConsoleColor color = GlobalConstants.DefaultColor)
             where T : struct
         {
             // TODO : SetCursor to somewhere in the right part and print the list AdditionMenu.PrintMenu()
@@ -43,7 +43,7 @@
                 Console.WriteLine(e + " - " + (int)e);
             }
 
-            Console.ForegroundColor = DefaultColor;
+            Console.ForegroundColor = GlobalConstants.DefaultColor;
 
             Console.WriteLine(GlobalConstants.SmallSeparator);
             Console.WriteLine(prompt);

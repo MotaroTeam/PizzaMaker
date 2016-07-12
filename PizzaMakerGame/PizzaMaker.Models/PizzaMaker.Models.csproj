@@ -90,16 +90,12 @@
     <Compile Include="Enums\ProductType\SpiceType.cs" />
     <Compile Include="Enums\SizeType.cs" />
     <Compile Include="Enums\ProductType\VegetablesType.cs" />
-    <Compile Include="Globals\GlobalConstants.cs" />
-    <Compile Include="Globals\Validation\AdditionOverload.cs" />
-    <Compile Include="Globals\Validation\ArgumentValidation.cs" />
     <Compile Include="Interfaces\IDeliverable.cs" />
     <Compile Include="Interfaces\IAdditive.cs" />
     <Compile Include="Interfaces\IMaker.cs" />
     <Compile Include="Interfaces\IPizza.cs" />
     <Compile Include="Interfaces\IRenderer.cs" />
     <Compile Include="Pizza.cs" />
-    <Compile Include="PizzaMaker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -110,7 +106,12 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{9e59a215-f353-435b-b0d4-a2560ac1f907}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

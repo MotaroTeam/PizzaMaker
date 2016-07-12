@@ -1,7 +1,7 @@
 ﻿namespace PizzaMaker.Models.Additions.Meat
 {
     using BaseClasses;
-    using Globals;
+    using Common;
 
     public class Sausage : Addition
     {
