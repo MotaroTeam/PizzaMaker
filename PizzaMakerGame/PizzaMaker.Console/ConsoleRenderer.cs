@@ -85,17 +85,15 @@
         public void RenderPizza(IPizza pizza)
         {
             StringBuilder builder = new StringBuilder();
-            var price = pizza.Price;
 
             builder.AppendLine(pizza.Name);
             builder.AppendLine("Chosen ingredients: ");
             foreach (var addition in pizza.Additions)
             {
-                price += addition.Price;
                 builder.AppendLine(string.Format("->{0} - {1}", addition.Name, addition.Quantity));
             }
 
-            builder.AppendLine(string.Format("Total price: ${0}", price));
+            builder.AppendLine(string.Format("Total price: ${0}", pizza.Price));
             Console.WriteLine(builder.ToString());
         }
 

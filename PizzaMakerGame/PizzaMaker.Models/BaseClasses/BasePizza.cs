@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using Enums;
     using Interfaces;
 
@@ -18,14 +19,22 @@
         {
             get
             {
+                decimal pizzaPrice;
                 switch (this.Size)
                 {
-                    case SizeType.Small: return 2m;
-                    case SizeType.Medium: return 4m;
-                    case SizeType.Large: return 6m;
+                    case SizeType.Small: pizzaPrice = 2m;
+                        break;
+                    case SizeType.Medium: pizzaPrice = 4m;
+                        break;
+                    case SizeType.Large: pizzaPrice = 6m;
+                        break;
                     default:
                         throw new ArgumentException("No Such Size");
                 }
+
+                pizzaPrice += this.Additions.Sum(addition => addition.Price);
+
+                return pizzaPrice;
             }
         }
 
