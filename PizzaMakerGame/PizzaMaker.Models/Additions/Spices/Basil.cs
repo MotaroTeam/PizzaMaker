@@ -8,15 +8,15 @@
     using BaseClasses;
     using Globals;
 
-   public class Basil : Addition
+    public class Basil : Addition
     {
         private const decimal PRICE = 0.1m; // Per gram.  <-- MInd the price
         private const int CALORIES = 5;
         private const bool VEGETARIAN = true;
 
         public Basil(int quantity)
-			: base(quantity)
-		{
+            : base(quantity)
+        {
             this.IsVegetarian = VEGETARIAN;
             this.Calories = quantity * CALORIES;
             this.Quantity = quantity * GlobalConstants.SPICE_QUANTITY;

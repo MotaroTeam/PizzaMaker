@@ -15,8 +15,8 @@
         private const bool VEGETARIAN = true;
 
         public Rosemary(int quantity)
-			: base(quantity)
-		{
+            : base(quantity)
+        {
             this.IsVegetarian = VEGETARIAN;
             this.Calories = quantity * CALORIES;
             this.Quantity = quantity * GlobalConstants.SPICE_QUANTITY;
