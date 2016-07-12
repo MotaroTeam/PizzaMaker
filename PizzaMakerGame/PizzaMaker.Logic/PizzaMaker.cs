@@ -83,32 +83,32 @@
                 switch (additionCategory)
                 {
                     case 1:
-                        addition = this.Render.InputFromEnum<CheeseType>("Choose additions to add: ");
+                        addition = this.Render.InputFromEnum<CheeseType>("Choose additions to add: ", ConsoleColor.Blue);
                         var cheeseDecorator = CheeseDecorator.Instance;
                         cheeseDecorator.Decorate(pizza, (CheeseType)addition, 1);
                         break;
                     case 2:
-                        addition = this.Render.InputFromEnum<FruitType>("Choose additions to add: ");
+                        addition = this.Render.InputFromEnum<FruitType>("Choose additions to add: ", ConsoleColor.Cyan);
                         var fruitDecorator = FruitDecorator.Instance;
                         fruitDecorator.Decorate(pizza, (FruitType)addition, 1);
                         break;
                     case 3:
-                        addition = this.Render.InputFromEnum<MeatType>("Choose additions to add: ");
+                        addition = this.Render.InputFromEnum<MeatType>("Choose additions to add: ", ConsoleColor.Yellow);
                         var meatDecorator = MeatDecorator.Instance;
                         meatDecorator.Decorate(pizza, (MeatType)addition, 1);
                         break;
                     case 4:
-                        addition = this.Render.InputFromEnum<SauceType>("Choose additions to add: ");
+                        addition = this.Render.InputFromEnum<SauceType>("Choose additions to add: ", ConsoleColor.DarkGreen);
                         var sauceDecorator = SauceDecorator.Instance;
                         sauceDecorator.Decorate(pizza, (SauceType)addition, 1);
                         break;
                     case 5:
-                        addition = this.Render.InputFromEnum<SpiceType>("Choose additions to add: ");
+                        addition = this.Render.InputFromEnum<SpiceType>("Choose additions to add: ", ConsoleColor.DarkMagenta);
                         var spiceDecorator = SpiceDecorator.Instance;
                         spiceDecorator.Decorate(pizza, (SpiceType)addition, 1);
                         break;
                     case 6:
-                        addition = this.Render.InputFromEnum<VegetablesType>("Choose additions to add: ");
+                        addition = this.Render.InputFromEnum<VegetablesType>("Choose additions to add: ", ConsoleColor.DarkYellow);
                         var vegetableDecorator = VegetableDecorator.Instance;
                         vegetableDecorator.Decorate(pizza, (VegetablesType)addition, 1);
                         break;
