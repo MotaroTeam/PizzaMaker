@@ -18,5 +18,9 @@
         void RenderAdditionDetails(IAdditive addition);
 
         void RenderMakerDetails(IMaker maker);
+
+        void PrintMenu(IPizza pizza);
+
+        DeliveryClient GetClientDetails();
     }
 }

@@ -3,10 +3,7 @@
     using System;
     using ConsoleRenderer;
     using Logic;
-    using Logic.Decorators;
-    using Models;
     using Models.Enums;
-    using Models.Enums.ProductType;
 
     public static class Startup
     {
@@ -24,8 +21,8 @@
 
             if (forWhere == 2)
             {
-                ConsoleRenderer.PrintMenu(pizza);
-                var client = ConsoleRenderer.GetClientDetails();
+                maker.Render.PrintMenu(pizza);
+                var client = maker.Render.GetClientDetails();
 
                 maker.Deliver(client);
             }

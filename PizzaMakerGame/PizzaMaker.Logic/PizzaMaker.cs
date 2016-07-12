@@ -2,23 +2,28 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Windows.Forms;
     using Common;
-    using ConsoleRenderer;
     using Decorators;
     using Models;
     using Models.Enums;
     using Models.Enums.ProductType;
     using Models.Interfaces;
+    using SizeType = global::PizzaMaker.Models.Enums.SizeType;
 
     public class PizzaMaker : IMaker
     {
         private IRenderer render;
+        private string name;
 
         public PizzaMaker(IRenderer render)
         {
+            this.PizzaFinished += this.PizzaMaker_PizzaFinished;
             this.Name = GlobalConstants.MakerName;
             this.render = render;
         }
+
+        private event EventHandler PizzaFinished;
 
         public IRenderer Render => this.render;
 
@@ -42,7 +47,7 @@
         {
             var pizza = new Pizza(name, usage, size);
 
-            ConsoleRenderer.PrintMenu(pizza);
+            this.Render.PrintMenu(pizza);
 
             int additionCategory = this.Render.InputFromEnum<ProductTypes>("Choose category: ");
 
@@ -50,7 +55,7 @@
             {
                 int addition = 0;
 
-                ConsoleRenderer.PrintMenu(pizza);
+                this.Render.PrintMenu(pizza);
 
                 switch (additionCategory)
                 {
@@ -88,10 +93,12 @@
                         throw new ArgumentException("No such category!");
                 }
 
-                ConsoleRenderer.PrintMenu(pizza);
+                this.Render.PrintMenu(pizza);
 
                 additionCategory = this.Render.InputFromEnum<ProductTypes>("Choose category: ");
             }
+
+            this.PizzaFinished?.Invoke(null, EventArgs.Empty);
 
             return pizza;
         }
@@ -99,6 +106,11 @@
         public void Deliver(DeliveryClient client)
         {
             Console.WriteLine(client.ToString());
+        }
+
+        private void PizzaMaker_PizzaFinished(object sender, EventArgs e)
+        {
+            MessageBox.Show("Pizza ready");
         }
     }
 }

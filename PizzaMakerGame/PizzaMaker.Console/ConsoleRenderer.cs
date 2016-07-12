@@ -4,8 +4,9 @@
     using System.Collections.Generic;
     using System.Text;
     using Common;
-    using PizzaMaker.Models.Interfaces;
     using PizzaMaker.Models;
+    using PizzaMaker.Models.Interfaces;
+
     public class ConsoleRenderer : IRenderer
     {
         public ConsoleRenderer()
@@ -20,15 +21,14 @@
             Console.Clear();
         }
 
-        public static void PrintMenu(IPizza pizza)
+        public void PrintMenu(IPizza pizza)
         {
             Console.Clear();
             AdditionMenu.PrintMenu(pizza.Additions);
         }
 
-        public static DeliveryClient GetClientDetails()
+        public DeliveryClient GetClientDetails()
         {
-
             Console.WriteLine("Enter name: ");
 
             var clientName = Console.ReadLine();
