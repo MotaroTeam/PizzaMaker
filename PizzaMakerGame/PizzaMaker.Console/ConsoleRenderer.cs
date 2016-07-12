@@ -8,14 +8,18 @@
 
     public class ConsoleRenderer : IRenderer
     {
+        // TODO: change as needed
+        private const ConsoleColor DefaultColor = ConsoleColor.Green;
+
         public ConsoleRenderer()
         {
             Console.WindowWidth = 100;
             Console.BufferWidth = 100;
+            Console.CursorVisible = false;
 
             // Can change colors from here
             Console.BackgroundColor = ConsoleColor.DarkGreen;
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = DefaultColor;
             Console.Clear();
         }
 
@@ -27,15 +31,19 @@
             return input;
         }
 
-        public int InputFromEnum<T>(string prompt = "")
+        public int InputFromEnum<T>(string prompt = "", ConsoleColor color = DefaultColor)
             where T : struct
         {
             // TODO : SetCursor to somewhere in the right part and print the list AdditionMenu.PrintMenu()
             Console.WriteLine(GlobalConstants.SmallSeparator);
+
+            Console.ForegroundColor = color;
             foreach (var e in Enum.GetValues(typeof(T)))
             {
                 Console.WriteLine(e + " - " + (int)e);
             }
+
+            Console.ForegroundColor = DefaultColor;
 
             Console.WriteLine(GlobalConstants.SmallSeparator);
             Console.WriteLine(prompt);

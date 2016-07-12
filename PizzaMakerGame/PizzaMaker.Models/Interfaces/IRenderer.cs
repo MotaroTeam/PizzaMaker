@@ -1,12 +1,13 @@
 ﻿namespace PizzaMaker.Models.Interfaces
 {
+    using System;
     using System.Collections.Generic;
 
     public interface IRenderer
     {
         string Input(string prompt);
 
-        int InputFromEnum<T>(string prompt) 
+        int InputFromEnum<T>(string prompt, ConsoleColor color) 
             where T : struct;
 
         void RenderPizza(IPizza pizza);
