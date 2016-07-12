@@ -72,7 +72,7 @@
             builder.AppendLine("Chosen ingredients: ");
             foreach (var addition in pizza.Additions)
             {
-                price += addition.Quantity * addition.Price;
+                price += addition.Price;
                 builder.AppendLine(string.Format("->{0} - {1}", addition.Name, addition.Quantity));
             }
 

@@ -5,7 +5,7 @@
 
     public class BlueCheese : Addition
     {
-        private const decimal PRICE = 0.2m; // Per gram.  <-- MInd the price
+        private const decimal PRICE = 0.02m; // Per gram.  <-- MInd the price
         private const int CALORIES = 140;
         private const bool VEGETARIAN = true;
 

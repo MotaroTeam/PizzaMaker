@@ -5,7 +5,7 @@
 
     public class Avocado : Addition
     {
-        private const decimal PRICE = 0.1m; // Per gram.  <-- MInd the price
+        private const decimal PRICE = 0.01m; // Per gram.  <-- MInd the price
         private const int CALORIES = 120;
         private const bool VEGETARIAN = true;
 

@@ -22,7 +22,8 @@
             for (int i = 0; i < pizzaAdditions.Count; i++)
             {
                 Console.SetCursorPosition(40, i + 2);
-                Console.WriteLine(string.Format(" -> {0}".PadRight(25, ' '), pizzaAdditions[i].GetType().Name));
+                Console.WriteLine(string.Format(" -> {0}(Grams:{1}, Cal:{2})".PadRight(25, ' '), pizzaAdditions[i].GetType().Name, 
+                    pizzaAdditions[i].Quantity, pizzaAdditions[i].Calories));
             }
 
             Console.SetCursorPosition(40, 2 + pizzaAdditions.Count + 1);

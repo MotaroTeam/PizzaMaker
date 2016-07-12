@@ -12,7 +12,6 @@
     {
         public static void Main()
         {
-            // TODO: Optionally change buffer/window size
             var renderer = new ConsoleRenderer();
 
             var pizzaName = renderer.Input("Pizza name");
@@ -35,7 +34,6 @@
                 Console.Clear();
                 AdditionMenu.PrintMenu(pizza.Additions);
 
-                // TODO : Implement multiple choice of additions at once
                 switch (additionCategory)
                 {
                     case 1:
@@ -78,7 +76,6 @@
                 additionCategory = renderer.InputFromEnum<ProductTypes>("Choose category: ");
             }
 
-            // TODO: Lower the price of additions
             renderer.RenderPizza(pizza);
 
             Console.ReadKey();

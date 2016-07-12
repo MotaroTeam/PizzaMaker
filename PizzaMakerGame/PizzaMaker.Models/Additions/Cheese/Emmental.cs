@@ -5,7 +5,7 @@
 
     public class Emmental : Addition
     {
-        private const decimal PRICE = 0.12m; // Per gram.  <-- MInd the price
+        private const decimal PRICE = 0.02m; // Per gram.  <-- MInd the price
         private const int CALORIES = 147;
         private const bool VEGETARIAN = true;
 

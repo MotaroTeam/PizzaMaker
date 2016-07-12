@@ -5,7 +5,7 @@
 
     public class Cheddar : Addition
     {
-        private const decimal PRICE = 0.15m; // Per gram.  <-- MInd the price
+        private const decimal PRICE = 0.05m; // Per gram.  <-- MInd the price
         private const int CALORIES = 161;
         private const bool VEGETARIAN = true;
 

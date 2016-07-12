@@ -5,7 +5,7 @@
 
     public class SmokedCheese : Addition
     {
-        private const decimal PRICE = 0.1m; // Per gram.  <-- MInd the price
+        private const decimal PRICE = 0.01m; // Per gram.  <-- MInd the price
         private const int CALORIES = 137;
         private const bool VEGETARIAN = true;
 
