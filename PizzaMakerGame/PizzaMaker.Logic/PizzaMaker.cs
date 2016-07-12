@@ -14,7 +14,6 @@
     public class PizzaMaker : IMaker
     {
         private IRenderer render;
-        private string name;
         private ICollection<IPizza> pizzas; 
 
         public PizzaMaker(IRenderer render)
@@ -23,11 +22,23 @@
             this.Name = GlobalConstants.MakerName;
             this.render = render;
             this.pizzas = new List<IPizza>();
+            this.Balance = GlobalConstants.DefaultBalance;
         }
 
         private event EventHandler PizzaFinished;
 
-        public ICollection<IPizza> Pizzas { get; set; } 
+        public ICollection<IPizza> Pizzas
+        {
+            get
+            {
+                return this.pizzas;
+            }
+
+            set
+            {
+                this.pizzas = value;
+            }
+        }
 
         public IRenderer Render => this.render;
 
@@ -44,7 +55,8 @@
 
         public void Sell(IPizza pizza)
         {
-            throw new System.NotImplementedException();
+            this.Balance += pizza.Price;
+            this.pizzas.Remove(pizza);
         }
 
         public IPizza Create(string name, ForType usage, SizeType size)
@@ -110,6 +122,7 @@
             }
 
             this.PizzaFinished?.Invoke(null, EventArgs.Empty);
+            this.pizzas.Add(pizza);
 
             return pizza;
         }

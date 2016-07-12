@@ -12,7 +12,7 @@
         {
             var maker = new PizzaMaker(new ConsoleRenderer());
 
-            var command = maker.Render.InputFromEnum<Command>(" What to do? ", ConsoleColor.Black);
+            var command = maker.Render.InputFromEnum<Command>(" What to do? ", ConsoleColor.DarkBlue);
             while ((Command)command != Command.Exit)
             {
                 switch ((Command)command)
@@ -34,9 +34,6 @@
                         }
 
                         maker.Sell(maker.Pizzas.FirstOrDefault(p => p.Name == name));
-                        break;
-                    case Command.PrintInfo:
-                        maker.Render.RenderMakerDetails(maker);
                         break;
                     default:
                         Environment.Exit(0);

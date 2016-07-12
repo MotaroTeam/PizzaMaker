@@ -23,10 +23,14 @@
 
         public const int ProductCategoryCount = 6;
 
+        // Separators
         public static readonly string SmallSeparator = new string('=', 30);
 
         public static readonly string BiggerSeparator = new string('-', 90);
 
+        // Default string values
         public const string MakerName = "Ivan";
+
+        public const decimal DefaultBalance = 0.00m;
     }
 }

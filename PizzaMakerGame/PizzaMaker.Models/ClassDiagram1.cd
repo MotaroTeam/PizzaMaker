@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PizzaMaker.Models.Additions.Cheese.BlueCheese" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Cheese\BlueCheese.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Cheese.Cheddar" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Cheese\Cheddar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Cheese.Emmental" Collapsed="true">
+    <Position X="26.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Cheese\Emmental.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Cheese.Feta" Collapsed="true">
+    <Position X="35.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Cheese\Feta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Cheese.Gouda" Collapsed="true">
+    <Position X="44.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Cheese\Gouda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Cheese.Mozzarella" Collapsed="true">
+    <Position X="53.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Cheese\Mozzarella.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Cheese.SmokedCheese" Collapsed="true">
+    <Position X="62.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Cheese\SmokedCheese.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Fruits.Apple" Collapsed="true">
+    <Position X="71.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Fruits\Apple.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Fruits.Avocado" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Fruits\Avocado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Fruits.Mango" Collapsed="true">
+    <Position X="17.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Fruits\Mango.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Fruits.Pineapple" Collapsed="true">
+    <Position X="28.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Fruits\Pineapple.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Meat.Bacon" Collapsed="true">
+    <Position X="37.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Meat\Bacon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Meat.Beef" Collapsed="true">
+    <Position X="46.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Meat\Beef.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Meat.Chicken" Collapsed="true">
+    <Position X="55.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Meat\Chicken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Meat.Ham" Collapsed="true">
+    <Position X="64.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Meat\Ham.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Meat.Pepperoni" Collapsed="true">
+    <Position X="73.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Meat\Pepperoni.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Meat.Sausage" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Meat\Sausage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Sauces.Alfredo" Collapsed="true">
+    <Position X="19.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Sauces\Alfredo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Sauces.Chily" Collapsed="true">
+    <Position X="31" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Sauces\Chily.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Sauces.GarlicSauce" Collapsed="true">
+    <Position X="40" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Sauces\GarlicSauce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Sauces.Ketchup" Collapsed="true">
+    <Position X="49" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Sauces\Ketchup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Sauces.Marinara" Collapsed="true">
+    <Position X="58" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Sauces\Marinara.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Sauces.Pesto" Collapsed="true">
+    <Position X="67" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Sauces\Pesto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Sauces.Ranch" Collapsed="true">
+    <Position X="76" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Sauces\Ranch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Spices.Basil" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Spices\Basil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Spices.Oregano" Collapsed="true">
+    <Position X="22" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Spices\Oregano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Spices.Rosemary" Collapsed="true">
+    <Position X="33.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Spices\Rosemary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Spices.Savory" Collapsed="true">
+    <Position X="42.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Spices\Savory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Vegetables.Broccoli" Collapsed="true">
+    <Position X="51.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Vegetables\Broccoli.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Vegetables.Mushroom" Collapsed="true">
+    <Position X="60.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Vegetables\Mushroom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Vegetables.Olive" Collapsed="true">
+    <Position X="69.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Vegetables\Olive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Vegetables.Onion" Collapsed="true">
+    <Position X="78.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Vegetables\Onion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Vegetables.Pepper" Collapsed="true">
+    <Position X="13" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Vegetables\Pepper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.Additions.Vegetables.Tomato" Collapsed="true">
+    <Position X="24.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Additions\Vegetables\Tomato.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.BaseClasses.Addition" Collapsed="true">
+    <Position X="41.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAQAAAAAAAAAAAAQAgAAAAYCAAAAAgCAAAAA=</HashCode>
+      <FileName>BaseClasses\Addition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PizzaMaker.Models.BaseClasses.BasePizza" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAgAAAAAAAAAQAIAAEAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseClasses\BasePizza.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PizzaMaker.Models.BaseClasses.Decorator" Collapsed="true">
+    <Position X="80.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAgAAA=</HashCode>
+      <FileName>BaseClasses\Decorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaMaker.Models.DeliveryPizza" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>DeliveryPizza.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PizzaMaker.Models.Pizza" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="PizzaMaker.Models.DeliveryClient" Collapsed="true">
+    <Position X="80.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAIEAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>DeliveryClient.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="PizzaMaker.Models.Interfaces.IAdditive" Collapsed="true">
+    <Position X="80.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAQAAAAAAAAAAAAQAAAAAAIAAAAAAgAAAAAA=</HashCode>
+      <FileName>Interfaces\IAdditive.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PizzaMaker.Models.Interfaces.IDeliverable" Collapsed="true">
+    <Position X="82.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Interfaces\IDeliverable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PizzaMaker.Models.Interfaces.IMaker" Collapsed="true">
+    <Position X="84.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAQAAAAAAAAAAQAgAAAQAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMaker.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PizzaMaker.Models.Interfaces.IPizza" Collapsed="true">
+    <Position X="86" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAgAAAAAAAAAQAIAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPizza.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PizzaMaker.Models.Interfaces.IRenderer" Collapsed="true">
+    <Position X="80.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAgAAAAAAQAAAAAAAAAAEIIAAAAEgAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="PizzaMaker.Models.Enums.Command" Collapsed="true">
+    <Position X="82.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAIAAAAAAAAAA=</HashCode>
+      <FileName>Enums\Command.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PizzaMaker.Models.Enums.ConsumableType" Collapsed="true">
+    <Position X="84.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAFAAAIAAAAAAAAABAAQAAA=</HashCode>
+      <FileName>Enums\ConsumableType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PizzaMaker.Models.Enums.ForType" Collapsed="true">
+    <Position X="86" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAgAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Enums\ForType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PizzaMaker.Models.Enums.ProductTypes" Collapsed="true">
+    <Position X="84.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAABAAAAAAAAAAgQAAAAAAAAAAAAAAAAAEAAYAAA=</HashCode>
+      <FileName>Enums\ProductTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PizzaMaker.Models.Enums.SizeType" Collapsed="true">
+    <Position X="80.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Enums\SizeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PizzaMaker.Models.Enums.ProductType.CheeseType" Collapsed="true">
+    <Position X="80.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAIAAAgACAAAAAAAAAQAAgAAACA=</HashCode>
+      <FileName>Enums\ProductType\CheeseType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PizzaMaker.Models.Enums.ProductType.FruitType" Collapsed="true">
+    <Position X="80.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAAAAAQAAAg=</HashCode>
+      <FileName>Enums\ProductType\FruitType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PizzaMaker.Models.Enums.ProductType.MeatType" Collapsed="true">
+    <Position X="82.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAIAAAIAAAAAAIIAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Enums\ProductType\MeatType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PizzaMaker.Models.Enums.ProductType.SauceType" Collapsed="true">
+    <Position X="86" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAAAAAAAAAAAAIAAAAAAAIAAAQAAAAABAAAAAAQA=</HashCode>
+      <FileName>Enums\ProductType\SauceType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PizzaMaker.Models.Enums.ProductType.SpiceType" Collapsed="true">
+    <Position X="82.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQQA=</HashCode>
+      <FileName>Enums\ProductType\SpiceType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PizzaMaker.Models.Enums.ProductType.VegetablesType" Collapsed="true">
+    <Position X="84.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAGAAEAQAAAAAAAAAAAAAAABAAAAEA=</HashCode>
+      <FileName>Enums\ProductType\VegetablesType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
