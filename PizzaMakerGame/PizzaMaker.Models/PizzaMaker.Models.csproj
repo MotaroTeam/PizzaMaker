@@ -80,6 +80,7 @@
     <Compile Include="BaseClasses\BasePizza.cs" />
     <Compile Include="DeliveryClient.cs" />
     <Compile Include="DeliveryPizza.cs" />
+    <Compile Include="Enums\Command.cs" />
     <Compile Include="Enums\ConsumableType.cs" />
     <Compile Include="Enums\ForType.cs" />
     <Compile Include="Enums\ProductTypes.cs" />

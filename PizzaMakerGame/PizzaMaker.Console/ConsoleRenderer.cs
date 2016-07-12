@@ -29,15 +29,15 @@
 
         public DeliveryClient GetClientDetails()
         {
-            Console.WriteLine("Enter name: ");
+            Console.WriteLine("Enter client name: ");
 
             var clientName = Console.ReadLine();
 
-            Console.WriteLine("Enter your address: ");
+            Console.WriteLine("Enter client address: ");
 
             var clientAdress = Console.ReadLine();
 
-            Console.WriteLine("Enter phone number: ");
+            Console.WriteLine("Enter client phone number: ");
 
             var clientNumber = Console.ReadLine();
 

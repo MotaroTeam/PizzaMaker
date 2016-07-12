@@ -15,15 +15,19 @@
     {
         private IRenderer render;
         private string name;
+        private ICollection<IPizza> pizzas; 
 
         public PizzaMaker(IRenderer render)
         {
             this.PizzaFinished += this.PizzaMaker_PizzaFinished;
             this.Name = GlobalConstants.MakerName;
             this.render = render;
+            this.pizzas = new List<IPizza>();
         }
 
         private event EventHandler PizzaFinished;
+
+        public ICollection<IPizza> Pizzas { get; set; } 
 
         public IRenderer Render => this.render;
 
@@ -46,6 +50,13 @@
         public IPizza Create(string name, ForType usage, SizeType size)
         {
             var pizza = new Pizza(name, usage, size);
+            if (usage == ForType.Delivery)
+            {
+                this.Render.PrintMenu(pizza);
+                var client = this.Render.GetClientDetails();
+
+                this.Deliver(client);
+            }
 
             this.Render.PrintMenu(pizza);
 
